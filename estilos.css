@@ -11,8 +11,7 @@ body {
   line-height: 1.6;
   color: #333;
   background:
-    linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.96)),
-    url('https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1600&q=70') center/cover fixed no-repeat;
+    linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.96))
 }
 
 /* Contenedor ancho */
@@ -281,6 +280,7 @@ details summary{
   .since-mini{ font-size: .72rem; }
   .cards-container{ grid-template-columns: 1fr; }
 }
+
 
 
 
