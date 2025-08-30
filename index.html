@@ -4,15 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Cáceres Álvarez — Abogados</title>
-  <meta name="description" content="Estudio jurídico con más de 25 años de experiencia. Derecho civil, penal, laboral y más. Atención en Asunción y online." />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="estilos.css" />
+  <meta name="description" content="Estudio jurídico con más de 25 años de experiencia. Derecho civil, penal, laboral, comercial y más. Atención en Asunción y online." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css?v=1" />
   <link rel="icon" href="favicon.ico" />
 </head>
 <body>
 
   <!-- Topbar -->
-  <header class="topbar">
+  <header class="topbar" id="topbar">
     <div class="wrap">
       <a href="#hero" class="brand" aria-label="Ir al inicio">CÁCERES ÁLVAREZ</a>
 
@@ -30,16 +30,17 @@
     </div>
   </header>
 
-  <!-- Hero -->
+  <!-- HERO -->
   <section id="hero" class="hero" role="banner" aria-label="Portada del sitio">
-    <div class="overlay">
+    <div class="hero-overlay">
       <div class="hero-content">
         <div class="logo-hero" aria-label="Logo Cáceres Álvarez Abogados">
-          <img src="logo.jpeg" alt="Cáceres Álvarez Abogados">
+          <img src="logo1.jpeg" alt="Cáceres Álvarez Abogados — Logo dorado">
         </div>
-        <p class="since">SINCE 1999</p>
 
-        <h2 class="tagline">Comprometidos con tu justicia</h2>
+        <p class="since">SINCE 1999</p>
+        <h1 class="tagline">Comprometidos con tu justicia</h1>
+
         <div class="cta-row">
           <a class="btn btn-primary" href="#contacto">Solicitá una consulta</a>
           <a class="btn btn-ghost" href="#servicios">Conocé nuestras áreas</a>
@@ -50,35 +51,38 @@
 
   <main>
 
-    <!-- Sobre -->
+    <!-- SOBRE -->
     <section id="sobre" class="section">
       <div class="wrap narrow">
-        <h3>Sobre nosotros</h3>
-        <p>
+        <h2 class="h">Sobre nosotros</h2>
+        <p class="lead">
           En <strong>Cáceres Álvarez Abogados</strong> contamos con más de
           <strong>25 años de experiencia</strong> brindando asesoría jurídica integral
-          a empresas, instituciones y personas. Nuestro trabajo se apoya en la
-          transparencia, la ética profesional y la defensa de los intereses de
-          nuestros clientes, ofreciendo soluciones eficaces y a medida.
+          a empresas, instituciones y personas. Basamos nuestro trabajo en la
+          ética profesional, la transparencia y la búsqueda de resultados
+          concretos para cada cliente.
         </p>
       </div>
     </section>
 
-    <!-- Misión / Visión / Valores -->
+    <!-- MISIÓN / VISIÓN / VALORES -->
     <section id="mvv" class="section soft">
       <div class="wrap">
-        <h3>Misión, Visión y Valores</h3>
+        <h2 class="h center">Misión, Visión y Valores</h2>
+
         <div class="grid-3">
           <article class="panel">
-            <h4>Misión</h4>
-            <p>Asesorar y representar con excelencia, compromiso ético y enfoque humano, buscando resultados concretos para cada cliente.</p>
+            <h3 class="hp">Misión</h3>
+            <p>Asesorar y representar con excelencia, compromiso ético y enfoque humano, buscando soluciones efectivas y sostenibles.</p>
           </article>
+
           <article class="panel">
-            <h4>Visión</h4>
-            <p>Ser un estudio jurídico de referencia en Paraguay, reconocido por la confianza, la calidad y el impacto positivo en la comunidad.</p>
+            <h3 class="hp">Visión</h3>
+            <p>Ser estudio jurídico de referencia en Paraguay, reconocido por la calidad, la confianza y la innovación en el ejercicio profesional.</p>
           </article>
+
           <article class="panel">
-            <h4>Valores</h4>
+            <h3 class="hp">Valores</h3>
             <ul class="ticks">
               <li>Integridad</li>
               <li>Responsabilidad</li>
@@ -91,70 +95,74 @@
       </div>
     </section>
 
-    <!-- Áreas -->
+    <!-- ÁREAS -->
     <section id="servicios" class="section">
       <div class="wrap">
-        <h3>Áreas de práctica</h3>
+        <h2 class="h">Áreas de práctica</h2>
         <p class="lead">Asesoría estratégica y representación en las principales ramas del derecho.</p>
 
         <div class="cards">
           <article class="card" tabindex="0" aria-expanded="false">
-            <h5>Derecho Civil y de Familia</h5>
+            <h4>Derecho Civil y de Familia</h4>
             <div class="detalle" hidden>
-              <p>Divorcios, sucesiones, adopciones, tenencias y procesos patrimoniales. Experiencia en casos complejos.</p>
+              <p>Divorcios, sucesiones, adopciones, tenencias y procesos patrimoniales. Acompañamiento integral en casos complejos.</p>
             </div>
           </article>
 
           <article class="card" tabindex="0" aria-expanded="false">
-            <h5>Derecho Penal</h5>
+            <h4>Derecho Penal</h4>
             <div class="detalle" hidden>
-              <p>Defensa técnica en procesos penales, representación de víctimas y estrategias en delitos complejos.</p>
+              <p>Defensa técnica, representación de víctimas y estrategias en delitos complejos con enfoque humano y técnico.</p>
             </div>
           </article>
 
           <article class="card" tabindex="0" aria-expanded="false">
-            <h5>Derecho Laboral</h5>
+            <h4>Derecho Laboral</h4>
             <div class="detalle" hidden>
-              <p>Consultoría a empleadores y trabajadores. Contratos, reclamaciones y resolución de conflictos.</p>
+              <p>Consultoría a empleadores y trabajadores. Contratos, reclamaciones, prevención y resolución de conflictos.</p>
             </div>
           </article>
 
           <article class="card" tabindex="0" aria-expanded="false">
-            <h5>Derecho Comercial</h5>
+            <h4>Derecho Comercial</h4>
             <div class="detalle" hidden>
-              <p>Contratos, sociedades, fusiones y asesoría integral a empresas.</p>
+              <p>Asesoría en contratos, sociedades, fusiones y gobierno corporativo para empresas y emprendedores.</p>
             </div>
           </article>
 
           <article class="card" tabindex="0" aria-expanded="false">
-            <h5>Propiedad Intelectual</h5>
+            <h4>Propiedad Intelectual</h4>
             <div class="detalle" hidden>
               <p>Registro y protección de marcas, patentes y derechos de autor. Defensa de activos intangibles.</p>
             </div>
           </article>
 
           <article class="card" tabindex="0" aria-expanded="false">
-            <h5>Mediación y Arbitraje</h5>
+            <h4>Mediación y Arbitraje</h4>
             <div class="detalle" hidden>
-              <p>Resolución alternativa de conflictos mediante negociación, conciliación y arbitraje.</p>
+              <p>Resolución alternativa de conflictos mediante negociación, conciliación y arbitraje institucional.</p>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Equipo -->
+    <!-- EQUIPO -->
     <section id="equipo" class="section soft">
       <div class="wrap narrow">
-        <h3>Nuestro equipo</h3>
-        <p>Combinamos rigor técnico y criterio práctico para lograr resultados. Defendemos con compromiso los intereses de quienes confían en nosotros.</p>
+        <h2 class="h center">Nuestro equipo</h2>
+        <p class="lead center">
+          Combinamos rigor técnico y criterio práctico. Nos enfocamos en comprender tu necesidad
+          y diseñar la estrategia legal que mejor te represente.
+        </p>
       </div>
     </section>
 
     <!-- FAQ -->
     <section id="faq" class="section">
       <div class="wrap">
-        <h3>Preguntas frecuentes</h3>
+        <h2 class="h">Preguntas frecuentes</h2>
+
         <details>
           <summary>¿Atienden consultas nacionales e internacionales vía online?</summary>
           <p>Sí, realizamos consultas virtuales por videollamada con cita previa.</p>
@@ -170,10 +178,10 @@
       </div>
     </section>
 
-    <!-- Contacto -->
+    <!-- CONTACTO -->
     <section id="contacto" class="section contact">
       <div class="wrap">
-        <h3>Contacto</h3>
+        <h2 class="h">Contacto</h2>
 
         <div class="contact-grid">
           <div>
@@ -219,11 +227,11 @@
 
   </main>
 
-  <!-- Footer (bajísimo contraste) -->
+  <!-- FOOTER (con el mismo logo dorado) -->
   <footer class="footer">
     <div class="wrap">
       <div class="footer-brand">
-        <img src="8c5a1d94-c491-4745-9c88-39c98cd686d0.jpg" alt="Cáceres Álvarez Abogados">
+        <img src="logo1.jpeg" alt="Cáceres Álvarez Abogados — Logo dorado">
       </div>
       <p class="copy">© 2025 Cáceres Álvarez Abogados. Todos los derechos reservados.</p>
     </div>
@@ -235,8 +243,6 @@
   <script src="script.js"></script>
 </body>
 </html>
-
-
 
 
 
