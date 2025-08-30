@@ -221,6 +221,26 @@ details[open]{ border-color: rgba(212,175,55,.35); }
 }
 
 
+/* Hero: versión en dos líneas del eslogan */
+.tagline--double{
+  display:flex;
+  flex-direction:column;
+  gap:.15em;
+  align-items:center;
+  line-height:1.15;
+}
+.tagline--double .accent{
+  color: var(--gold-2);
+  letter-spacing:.02em;
+}
+
+/* si lo querés en una sola línea en pantallas grandes, descomenta esto:
+@media (min-width: 1080px){
+  .tagline--double{ flex-direction:row; gap:.5em; }
+  .tagline--double .accent::before{ content:"· "; margin: 0 .35em 0 0; color: #fff; }
+}
+*/
+
 
 
 
