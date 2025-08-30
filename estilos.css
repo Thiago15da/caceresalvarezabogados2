@@ -55,23 +55,22 @@ body{
 .nav-toggle span{ display:block; height:2px; background:var(--brand-dark); margin:7px 0; border-radius:2px; }
 
 /* ===== Hero limpio (logo azul) ===== */
+/* HERO con textura clara + overlay muy leve azulada */
 .hero{
   position: relative;
   min-height: 88vh;
-  background: #fdfdfd;         /* 🔹 fondo claro uniforme */
-  display: grid;
-  place-items: center;
-  text-align: center;
-  color: var(--brand-dark);
+  background:
+    url("https://source.unsplash.com/1600x900/?white,texture") /* textura clara aleatoria */
+      center/cover no-repeat fixed;
+  display: grid; place-items: center; text-align: center; color: #0F2630;
 }
 .hero .overlay{
-  position: absolute;
-  inset: 0;
-  background: rgba(255,255,255,.9);  /* 🔹 overlay blanco sutil */
-  display: grid;
-  place-items: center;
-  padding: 20px;
+  position: absolute; inset: 0;
+  background: rgba(255,255,255,.70);            /* subí a .80 si querés más claridad */
+  backdrop-filter: blur(2px);                   /* unifica un poquito la textura */
+  display: grid; place-items: center; padding: 20px;
 }
+
 
 
 /* Logo hero */
@@ -219,6 +218,7 @@ body{
 
   .logo-hero{ width:180px; height:180px; }
 }
+
 
 
 
