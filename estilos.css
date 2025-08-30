@@ -436,6 +436,40 @@ https://plus.unsplash.com/premium_photo-1661497281000-b5ecb39a2114?q=80&w=1170&a
   .logo{ width: 200px; height: 100px; margin-bottom: 10px; }
   .logo .since{ font-size: .74rem; letter-spacing: .1em; }
 }
+/* Caja del icono (mismo espacio que el SVG anterior) */
+.logo-mini{
+  width: 64px;      /* si tu SVG era más grande/pequeño, ajustá 56/72/80 */
+  height: 64px;
+  margin: 0 auto 12px;   /* centrado + espacio inferior como antes */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Imagen: ocupa la caja sin deformarse */
+.logo-mini img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;          /* no recorta ni deforma */
+  display: block;
+  border-radius: 8px;           /* si tu icono anterior tenía puntas suaves */
+  box-shadow: 0 2px 8px rgba(0,0,0,.25); /* opcional, como el look anterior */
+}
+
+/* Texto pequeño debajo del icono (opcional) */
+.since-mini{
+  margin: 0 auto 18px;          /* separa el icono del título */
+  text-align: center;
+  font-size: .75rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: #e9eef3;               /* cambia a #666 si el fondo es claro */
+}
+
+/* Si tenés una regla global tipo img { max-width:100%; height:auto } (Bootstrap)
+   forzamos que aquí NO se aplique para que no se desborde ni cambie de tamaño */
+.logo-mini img{ max-width: none; }
+
 
 
 
