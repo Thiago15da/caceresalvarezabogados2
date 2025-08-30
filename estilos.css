@@ -54,28 +54,23 @@ body{
 .nav-toggle{ display:none; width:44px; height:36px; border:0; background:transparent; cursor:pointer; }
 .nav-toggle span{ display:block; height:2px; background:var(--brand-dark); margin:7px 0; border-radius:2px; }
 
-/* HERO con textura clara más visible */
+/* HERO con textura clara fija (no cambia sola) */
 .hero{
   position: relative;
   min-height: 88vh;
   background:
     url("https://images.unsplash.com/photo-1501612780327-45045538702b?auto=format&fit=crop&w=1600&q=80")
-      center/cover no-repeat fixed;   /* textura de mármol/pared clara */
-  display: grid;
-  place-items: center;
-  text-align: center;
-  color: #0F2630;
+      center/cover no-repeat; /* <- URL fija */
+  display: grid; place-items: center;
+  text-align: center; color: #0F2630;
+}
+.hero .overlay{
+  position: absolute; inset: 0;
+  background: rgba(245, 248, 250, .65);
+  backdrop-filter: blur(1.5px);
+  display: grid; place-items: center; padding: 20px;
 }
 
-.hero .overlay{
-  position: absolute;
-  inset: 0;
-  background: rgba(245, 248, 250, .65); /* 🔹 más transparente, deja ver más textura */
-  backdrop-filter: blur(1.5px);         /* suaviza pero no borra */
-  display: grid;
-  place-items: center;
-  padding: 20px;
-}
 
 
 
@@ -202,6 +197,7 @@ body{
 
   .logo-hero{ width:180px; height:180px; }
 }
+
 
 
 
