@@ -154,16 +154,33 @@ body{
 
 /* Footer */
 .footer{
-  background: var(--bg-dark); color: var(--fg-light); text-align: center; padding: 36px 0 28px;
+  background: #f4f4f4;        /* 🔹 Fondo claro */
+  color: #333;                /* 🔹 Texto oscuro */
+  text-align: center;
+  padding: 40px 0 30px;
+  border-top: 2px solid #ddd; /* línea sutil arriba */
 }
+
 .footer .footer-brand{
-  display: flex; justify-content: center; margin-bottom: 12px;
+  margin-bottom: 14px;
 }
+
 .footer .footer-brand img{
-  width: 100%; max-width: 300px; height: auto; object-fit: contain;
-  filter: contrast(1.03) saturate(1.02);
+  width: 100%;
+  max-width: 280px;    /* ajusta tamaño según te guste */
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  filter: brightness(1.05) contrast(1.05); /* mejora visibilidad en fondo claro */
 }
-.footer .copy{ margin: 0; opacity: .95; }
+
+.footer .copy{
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;   /* gris medio para buen contraste */
+}
+
 
 /* WhatsApp flotante */
 .btn-whatsapp{
@@ -185,3 +202,4 @@ body{
 
   .logo-hero{ width: 140px; height: 140px; }
 }
+
