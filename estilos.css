@@ -54,19 +54,25 @@ body{
 .nav-toggle{ display:none; width:44px; height:36px; border:0; background:transparent; cursor:pointer; }
 .nav-toggle span{ display:block; height:2px; background:var(--brand-dark); margin:7px 0; border-radius:2px; }
 
-/* ===== Hero (claro para logo azul) ===== */
+/* ===== Hero limpio (logo azul) ===== */
 .hero{
-  position:relative; min-height:88vh;
-  background:url('https://plus.unsplash.com/premium_photo-1661497281000-b5ecb39a2114?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.1.0')
-    center/cover no-repeat;
-  display:grid; place-items:center; text-align:center; color:var(--brand-dark);
+  position: relative;
+  min-height: 88vh;
+  background: #fdfdfd;         /* 🔹 fondo claro uniforme */
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: var(--brand-dark);
 }
 .hero .overlay{
-  position:absolute; inset:0;
-  background:rgba(255,255,255,.88);   /* overlay claro, baja el contraste */
-  display:grid; place-items:center; padding:20px;
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,.9);  /* 🔹 overlay blanco sutil */
+  display: grid;
+  place-items: center;
+  padding: 20px;
 }
-.hero-content{ max-width:900px; padding:10px; }
+
 
 /* Logo hero */
 .logo-hero{ width:220px; height:220px; margin:0 auto 12px; }
@@ -145,17 +151,52 @@ body{
 /* Mapa */
 .mapa iframe{ border:0; border-radius:14px; box-shadow:var(--shadow); }
 
-/* ===== Footer (muy bajo contraste) ===== */
+/* ===== Footer con imagen (logo blanco) ===== */
 .footer{
-  background:var(--footer-bg); color:#3a3a3a; text-align:center;
-  padding:36px 0 28px; border-top:1px solid var(--footer-border);
+  position: relative;
+  background: url('https://plus.unsplash.com/premium_photo-1661497281000-b5ecb39a2114?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.1.0')
+    center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px 40px;
 }
-.footer .footer-brand{ display:flex; justify-content:center; margin-bottom:12px; }
+
+/* Overlay oscuro para contraste */
+.footer::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(15,38,48,.8); /* 🔹 oscurece fondo */
+  z-index: 0;
+}
+
+.footer .wrap{
+  position: relative;
+  z-index: 1; /* encima del overlay */
+}
+
+.footer .footer-brand{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
 .footer .footer-brand img{
-  width:100%; max-width:280px; height:auto; object-fit:contain; display:block; margin:0 auto;
-  filter:brightness(1.04) contrast(1.03);  /* leve ajuste sin “gritar” */
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  filter: brightness(1.1) contrast(1.05);
 }
-.footer .copy{ margin:0; font-size:.95rem; color:#666; }
+
+.footer .copy{
+  margin: 0;
+  font-size: .95rem;
+  opacity: .9;
+}
+
 
 /* WhatsApp flotante */
 .btn-whatsapp{
@@ -178,6 +219,7 @@ body{
 
   .logo-hero{ width:180px; height:180px; }
 }
+
 
 
 
