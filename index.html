@@ -188,31 +188,35 @@
             <p><strong>Teléfono:</strong> +595 971 872841 — +595 872842</p>
             <p><strong>Dirección:</strong> Hernandarias y Félix Pérez Cardozo, Lambaré</p>
 
-            <form
-              action="https://formsubmit.co/caceresalvarezabogados@gmail.com"
-              method="POST"
-              accept-charset="UTF-8"
-              enctype="application/x-www-form-urlencoded"
-              target="_self"
-              aria-label="Formulario de contacto"
-            >
-              <label for="nombre">Nombre</label>
-              <input id="nombre" name="nombre" type="text" required>
+<form
+  action="https://formsubmit.co/caceresalvarezabogados@gmail.com"
+  method="POST"
+  accept-charset="UTF-8"
+  enctype="application/x-www-form-urlencoded"
+  target="_self"
+  aria-label="Formulario de contacto"
+>
+  <label for="nombre">Nombre</label>
+  <input id="nombre" name="nombre" type="text" required>
 
-              <label for="email">Email</label>
-              <input id="email" name="email" type="email" required>
+  <label for="email">Email</label>
+  <input id="email" name="email" type="email" required>
 
-              <label for="mensaje">Mensaje</label>
-              <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+  <label for="mensaje">Mensaje</label>
+  <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
 
-              <input type="hidden" name="_subject" value="Nueva consulta desde el sitio">
-              <input type="hidden" name="_template" value="table">
-              <input type="hidden" name="_captcha" value="false">
-              <input type="hidden" name="_next" value="gracias.html">
-              <input type="text" name="_honey" style="display:none">
+  <!-- ✅ URL ABSOLUTA A TU SITIO -->
+  <input type="hidden" name="_next" value="https://caceresalvarezabogados.com.py/gracias.html">
 
-              <button type="submit" class="btn btn-primary">Enviar consulta</button>
-            </form>
+  <!-- Opcionales recomendados -->
+  <input type="hidden" name="_subject" value="Nueva consulta desde el sitio">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="text" name="_honey" style="display:none">
+
+  <button type="submit" class="btn btn-primary">Enviar consulta</button>
+</form>
+
           </div>
 
           <div class="mapa">
@@ -243,6 +247,7 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
