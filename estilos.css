@@ -100,8 +100,19 @@ body{
 
 /* MVV */
 .grid-3{
-  display:grid; gap:22px; grid-template-columns:repeat(3, minmax(0,1fr));
+  display: grid;
+  gap: 22px;
+  grid-template-columns: 1fr;   /* 🔹 Por defecto: 1 columna */
 }
+
+@media (min-width: 640px){      /* 🔹 Tablet */
+  .grid-3{ grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 960px){      /* 🔹 Desktop */
+  .grid-3{ grid-template-columns: repeat(3, 1fr); }
+}
+
 .panel{
   background:#fff; border-radius:var(--radius); padding:18px;
   border-left:4px solid var(--brand-dark); box-shadow:var(--shadow);
@@ -167,6 +178,7 @@ body{
 
   .logo-hero{ width:180px; height:180px; }
 }
+
 
 
 
