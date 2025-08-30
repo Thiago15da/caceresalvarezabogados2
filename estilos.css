@@ -59,7 +59,7 @@ body{
   position: relative;
   min-height: 88vh;
   background:
-    url("https://images.unsplash.com/photo-1501612780327-45045538702b?auto=format&fit=crop&w=1600&q=80")
+    url("https://unsplash.com/es/fotos/pipa-de-fumar-de-madera-marron-sobre-superficie-blanca-6sl88x150Xs")
       center/cover no-repeat; /* <- URL fija */
   display: grid; place-items: center;
   text-align: center; color: #0F2630;
@@ -197,6 +197,7 @@ body{
 
   .logo-hero{ width:180px; height:180px; }
 }
+
 
 
 
