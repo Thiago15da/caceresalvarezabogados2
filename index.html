@@ -202,24 +202,37 @@
       <p>Teléfono: +595 971 872841 - +595 872842</p>
       <p>Dirección: Hernandarias y Felix Perez Cardozo, Lambaré</p>
 
-      <!-- FormSubmit mantiene lo que ya funcionaba -->
-      <form action="https://formsubmit.co/caceresalvarezabogados@gmail.com" method="POST" aria-label="Formulario de contacto">
-        <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" name="nombre" required />
+     <form
+  action="https://formsubmit.co/caceresalvarezabogados@gmail.com"
+  method="POST"
+  accept-charset="UTF-8"
+  enctype="application/x-www-form-urlencoded"
+  target="_self"
+  aria-label="Formulario de contacto"
+>
+  <!-- Campos visibles -->
+  <label for="nombre">Nombre</label>
+  <input id="nombre" name="nombre" type="text" required>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required />
+  <label for="email">Email</label>
+  <input id="email" name="email" type="email" required>
 
-        <label for="mensaje">Mensaje</label>
-        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+  <label for="mensaje">Mensaje</label>
+  <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
 
-        <!-- Redirección a página de gracias -->
-        <input type="hidden" name="_next" value="gracias.html">
-        <!-- Opcional: desactivar captcha -->
-        <input type="hidden" name="_captcha" value="false">
+  <!-- Opcionales recomendados -->
+  <input type="hidden" name="_subject" value="Nueva consulta desde el sitio">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_captcha" value="false">
+  <!-- Cambia esta URL por la de tu página de gracias -->
+  <input type="hidden" name="_next" value="https://caceresalvarezabogados.com.py/gracias.html">
 
-        <button type="submit">Enviar consulta</button>
-      </form>
+  <!-- Honeypot anti-spam (oculto) -->
+  <input type="text" name="_honey" style="display:none">
+
+  <button type="submit">Enviar consulta</button>
+</form>
+
     </div>
   </section>
 
@@ -293,3 +306,4 @@
 
 </body>
 </html>
+
