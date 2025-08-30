@@ -56,13 +56,14 @@ body {
 
 /* Logo fijo (tamaño del antiguo SVG) */
 .logo-mini{
-  width: 72px;          /* ⇦ ajustá a 64/72/80 para igualar el tamaño exacto que querés */
-  height: 72px;
-  margin: 0 auto 10px;
+  width: 140px;   /* antes 72px */
+  height: 140px;  /* antes 72px */
+  margin: 0 auto 16px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .logo-mini img{
   width: 100% !important;
   height: 100% !important;
@@ -280,6 +281,7 @@ details summary{
   .since-mini{ font-size: .72rem; }
   .cards-container{ grid-template-columns: 1fr; }
 }
+
 
 
 
