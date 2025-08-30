@@ -378,3 +378,27 @@ https://plus.unsplash.com/premium_photo-1661497281000-b5ecb39a2114?q=80&w=1170&a
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* centra horizontalmente */
+  justify-content: center;
+  text-align: center;
+  margin: 20px auto;     /* espacio arriba/abajo */
+}
+
+.logo img {
+  max-width: 180px;   /* ajustá el tamaño del logo */
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.logo .since {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #f5f5f5;     /* o #777 según fondo */
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
