@@ -1,7 +1,6 @@
 // Menú móvil
 const toggle = document.querySelector('.nav-toggle');
 const nav = document.querySelector('.nav');
-
 if (toggle) {
   toggle.addEventListener('click', () => {
     const open = nav.classList.toggle('open');
@@ -9,7 +8,7 @@ if (toggle) {
   });
 }
 
-// Cards: abrir/cerrar detalle accesible
+// Cards (abrir/cerrar detalle accesible)
 document.querySelectorAll('.card').forEach(card => {
   const toggleCard = () => {
     const detalle = card.querySelector('.detalle');
@@ -33,6 +32,15 @@ document.querySelectorAll('.card').forEach(card => {
   });
 });
 
+// Cambia la opacidad de la topbar al hacer scroll
+const topbar = document.getElementById('topbar');
+const onScroll = () => {
+  if (window.scrollY > 10) topbar.classList.add('scrolled');
+  else topbar.classList.remove('scrolled');
+};
+onScroll();
+window.addEventListener('scroll', onScroll);
+
 // Scroll suave para anclas
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', (e) => {
@@ -45,5 +53,6 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     }
   });
 });
+
 
 
