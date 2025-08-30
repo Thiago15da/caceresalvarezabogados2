@@ -25,8 +25,7 @@ body {
 .hero-header{
   position: relative;
   min-height: 100vh;
-  background: url('https://plus.unsplash.com/premium_photo-1661497281000-b5ecb39a2114?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.1.0') center/cover no-repeat;
-  display: flex;
+ 
   align-items: center;
   justify-content: center;
   color: #F4E9C6;
@@ -280,6 +279,7 @@ details summary{
   .since-mini{ font-size: .72rem; }
   .cards-container{ grid-template-columns: 1fr; }
 }
+
 
 
 
