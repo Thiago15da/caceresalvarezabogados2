@@ -76,42 +76,59 @@ body{
 
 
 /* ===== Hero ===== */
-.hero-header{
+/* ===== Hero claro (para logo azul) ===== */
+.hero{
   position: relative;
   min-height: 88vh;
   background: url('https://plus.unsplash.com/premium_photo-1661497281000-b5ecb39a2114?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.1.0')
     center/cover no-repeat;
   display: grid; place-items: center;
-  color: var(--fg-light); text-align: center;
+  text-align: center;
+  color: #0F2630; /* textos oscuros */
 }
-.hero-header .overlay{
-  position: absolute; inset: 0;                 /* cubre toda la imagen */
-  background: rgba(15, 38, 48, 0.86);
+
+/* Overlay claro que cubre todo */
+.hero .overlay{
+  position: absolute; inset: 0;
+  background: rgba(255,255,255,.86);
   display: grid; place-items: center;
   padding: 20px;
 }
+
 .hero-content{ max-width: 900px; padding: 10px; }
 
-.logo-hero{ width: 180px; height: 180px; margin: 0 auto 12px; }
+/* Logo grande */
+.logo-hero{ width: 220px; height: 220px; margin: 0 auto 12px; }
 .logo-hero img{
   width: 100%; height: 100%; object-fit: contain; display: block;
-  border-radius: 12px; box-shadow: 0 6px 24px rgba(0,0,0,.35);
+  border-radius: 12px; box-shadow: 0 6px 18px rgba(0,0,0,.12);
 }
-.since{
-  margin: 2px 0 16px; font-size: .88rem; letter-spacing: .18em; text-transform: uppercase;
-  color: #E9EEF3; opacity: .95;
-}
-.tagline{ font-size: clamp(1.6rem, 1.6vw + 1rem, 2.2rem); margin: 0 0 18px; }
 
+/* Since + tagline en oscuro */
+.since{
+  margin: 4px 0 18px; font-size: .9rem; letter-spacing: .18em; text-transform: uppercase;
+  color: #0F2630; opacity: .9;
+}
+.tagline{
+  font-size: clamp(1.6rem, 1.6vw + 1rem, 2.2rem);
+  margin: 0 0 18px; color: #0F2630;
+}
+
+/* Botones con contraste invertido */
 .cta-row{ display: inline-flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
 .btn{
   display: inline-block; border-radius: 30px; padding: 12px 22px; font-weight: 700;
   text-decoration: none; transition: transform .08s ease, background .22s ease;
 }
-.btn-primary{ background: var(--fg-light); color: var(--bg-dark); }
-.btn-primary:hover{ background: #e4d9b2; }
-.btn-ghost{ color: var(--fg-light); border: 2px solid rgba(244,233,198,.35); }
-.btn-ghost:hover{ background: rgba(244,233,198,.1); }
+.btn-primary{ background: #0F2630; color: #fff; }
+.btn-primary:hover{ background: #183946; }
+.btn-ghost{ color: #0F2630; border: 2px solid #0F2630; }
+.btn-ghost:hover{ background: rgba(15,38,48,.06); }
+
+@media (max-width: 760px){
+  .logo-hero{ width: 180px; height: 180px; }
+}
+
 
 /* ===== Secciones ===== */
 .section h3{ margin: 0 0 16px; font-size: 1.6rem; color: var(--bg-dark); }
@@ -164,54 +181,24 @@ body{
 }
 
 /* Footer */
+/* ===== Footer claro (para logo blanco/gris) ===== */
 .footer{
-  background: #f4f4f4;        /* 🔹 Fondo claro */
-  color: #333;                /* 🔹 Texto oscuro */
+  background: #f4f4f4;   /* gris claro */
+  color: #333;
   text-align: center;
   padding: 40px 0 30px;
-  border-top: 2px solid #ddd; /* línea sutil arriba */
+  border-top: 2px solid #e9e9e9;
 }
-
 .footer .footer-brand{
-  margin-bottom: 14px;
+  display: flex; justify-content: center; margin-bottom: 14px;
 }
-
 .footer .footer-brand img{
-  width: 100%;
-  max-width: 280px;    /* ajusta tamaño según te guste */
-  height: auto;
-  object-fit: contain;
-  display: block;
-  margin: 0 auto;
-  filter: brightness(1.05) contrast(1.05); /* mejora visibilidad en fondo claro */
+  width: 100%; max-width: 300px; height: auto; object-fit: contain;
+  display: block; margin: 0 auto;
+  filter: brightness(1.05) contrast(1.05);
 }
-
 .footer .copy{
-  margin: 0;
-  font-size: 0.9rem;
-  color: #555;   /* gris medio para buen contraste */
-}
-
-
-/* WhatsApp flotante */
-.btn-whatsapp{
-  position: fixed; right: 20px; bottom: 20px; z-index: 40;
-  background: #25D366; color: #fff; text-decoration: none; font-weight: 700;
-  padding: 10px 16px; border-radius: 999px; box-shadow: 0 6px 22px rgba(0,0,0,.3);
-}
-
-/* ===== Responsive ===== */
-@media (max-width: 920px){
-  .contact .contact-grid{ grid-template-columns: 1fr; }
-}
-@media (max-width: 760px){
-  .nav{ display: none; position: absolute; top: 56px; right: 0; left: 0;
-        background: rgba(15,38,48,.96); padding: 12px 20px; flex-direction: column; gap: 10px; }
-  .nav a{ padding: 10px; border-radius: 10px; }
-  .nav-toggle{ display: block; }
-  .nav.open{ display: flex; }
-
-  .logo-hero{ width: 140px; height: 140px; }
+  margin: 0; font-size: .95rem; color: #555;
 }
 
 
