@@ -33,12 +33,22 @@ body {
   color: #F4E9C6;
   text-align: center;
 }
-.hero-header .overlay{
+.hero-header .overlay {
+  position: absolute;      /* se pega al header */
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  padding: 48px 20px 40px;
-  background: rgba(15, 38, 48, 0.86);
+
+  background-color: rgba(15, 38, 48, 0.85); /* azul transparente */
+
+  display: flex;           
+  flex-direction: column;
+  justify-content: center; /* centra vertical */
+  align-items: center;     /* centra horizontal */
+  padding: 20px;
 }
+
 .contenedor-header{
   max-width: 1000px;
   margin: 0 auto;
@@ -270,6 +280,7 @@ details summary{
   .since-mini{ font-size: .72rem; }
   .cards-container{ grid-template-columns: 1fr; }
 }
+
 
 
 
