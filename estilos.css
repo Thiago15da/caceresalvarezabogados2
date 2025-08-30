@@ -355,4 +355,26 @@ nav a:hover {
     font-size: 1.5em;
   }
 }
+
 https://plus.unsplash.com/premium_photo-1661497281000-b5ecb39a2114?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.logo img {
+  max-width: 200px; /* ajustá según lo grande que quieras el logo */
+  height: auto;
+  border-radius: 10px; /* suaviza esquinas */
+  box-shadow: 0 3px 12px rgba(0,0,0,.25); /* lo separa del fondo */
+}
+
+.logo .since {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: #777; /* gris neutro */
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
