@@ -32,37 +32,48 @@ body{
 .section.soft{ background: #FAFBFC; }
 .lead{ color: var(--muted); margin-top: 6px; }
 
-/* ===== Topbar ===== */
+/* ===== Topbar (clara) ===== */
 .topbar{
   position: sticky; top: 0; z-index: 20;
-  background: rgba(15, 38, 48, 0.88);
+  background: rgba(255,255,255,.92);
   backdrop-filter: blur(6px);
-  color: var(--fg-light);
+  border-bottom: 1px solid #ececec;
+  color: #0F2630;
 }
 .topbar .wrap{
   display: flex; align-items: center; justify-content: space-between;
   height: 56px;
 }
+
+/* Marca (texto) — si preferís ocultarla porque el logo ya dice el nombre,
+   puedes dejarla o cambiar el texto por “Inicio” */
 .brand{
-  color: var(--fg-light); text-decoration: none; font-weight: 600; letter-spacing: .02em;
+  color: #0F2630; text-decoration: none; font-weight: 700; letter-spacing: .04em;
 }
 
-/* Nav */
+/* Nav claro */
 .nav{ display: flex; gap: 18px; }
 .nav a{
-  color: var(--fg-light); text-decoration: none; font-weight: 600;
-  padding: 8px 10px; border-radius: 8px;
+  color: #0F2630; text-decoration: none; font-weight: 600;
+  padding: 8px 10px; border-radius: 10px;
 }
-.nav a:hover{ background: rgba(244,233,198,.12); }
+.nav a:hover{ background: rgba(15,38,48,.06); }
 
-/* Mobile nav toggle */
+/* Toggle móvil */
 .nav-toggle{
-  display: none;
-  width: 44px; height: 36px; border: 0; background: transparent; cursor: pointer;
+  display: none; width: 44px; height: 36px; border: 0; background: transparent; cursor: pointer;
 }
-.nav-toggle span{
-  display: block; height: 2px; background: var(--fg-light); margin: 7px 0; border-radius: 2px;
+.nav-toggle span{ display:block; height:2px; background:#0F2630; margin:7px 0; border-radius:2px; }
+
+@media (max-width: 760px){
+  .nav{ display:none; position:absolute; top:56px; right:0; left:0;
+        background: rgba(255,255,255,.98); padding: 12px 20px; flex-direction: column; gap: 10px;
+        border-bottom: 1px solid #ececec; }
+  .nav a{ padding: 10px; border-radius: 10px; }
+  .nav.open{ display:flex; }
+  .nav-toggle{ display:block; }
 }
+
 
 /* ===== Hero ===== */
 .hero-header{
@@ -202,4 +213,5 @@ body{
 
   .logo-hero{ width: 140px; height: 140px; }
 }
+
 
