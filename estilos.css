@@ -1,474 +1,276 @@
-/* Fuente base */
+/* ===== Reset y base ===== */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html, body {
+  margin: 0; padding: 0;
+}
 body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  padding: 0;
+  font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   line-height: 1.6;
-  background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.95)),
-              url('https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1500&q=80');
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
   color: #333;
+  background:
+    linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.96)),
+    url('https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1600&q=70') center/cover fixed no-repeat;
 }
 
-
-/* Encabezado */
-header {
-  background-color: #0F2630;
-  color: #F4E9C6;
-  padding: 20px;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  justify-content: center; /* <-- Esta línea centra el contenido */
-  gap: 20px;
-  flex-wrap: wrap;
-  text-align: center;
-}
-
-
-.logo h1 {
-  margin: 0;
-  font-size: 1.5em;
-}
-
-nav {
-  margin-top: 15px;
-}
-
-nav a {
-  color: #F4E9C6;
-  margin-right: 15px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* Secciones */
-main section {
-  padding: 40px 20px;
+/* Contenedor ancho */
+.wrapper {
   max-width: 1000px;
-  margin: auto;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-main h2 {
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-}
-
-/* Cards */
-.cards-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.card {
-  background-color: white;
-  border: 1px solid #ddd;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-}
-
-.detalle {
-  margin-top: 10px;
-  color: #555;
-}
-
-/* Contacto */
-.contacto form {
-  display: flex;
-  flex-direction: column;
-}
-
-.contacto label {
-  margin-top: 10px;
-}
-
-.contacto input, .contacto textarea {
-  padding: 10px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.contacto button {
-  margin-top: 15px;
-  background-color: #0F2630;
-  color: #F4E9C6;
-  border: none;
-  padding: 12px;
-  cursor: pointer;
-  border-radius: 4px;
-  font-weight: bold;
-}
-
-.contacto button:hover {
-  background-color: #1d3a45;
-}
-
-/* Footer */
-footer.footer {
-  background-color: #0F2630;
-  color: #F4E9C6;
-  padding: 30px 20px;
-  text-align: center;
-}
-
-.logo-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.logo-text h2 {
-  margin: 0;
-  font-size: 1.5em;
-}
-
-.logo-text p {
-  margin: 0;
-}
-
-/* Testimonios y FAQ */
-blockquote {
-  background: #fff;
-  border-left: 5px solid #0F2630;
-  padding: 15px 20px;
-  margin: 15px 0;
-  font-style: italic;
-}
-
-details {
-  background: #fff;
-  border: 1px solid #ccc;
-  padding: 10px 15px;
-  margin-bottom: 10px;
-  border-radius: 6px;
-}
-
-/* Mapa */
-iframe {
-  border: none;
-  border-radius: 8px;
-  margin-top: 20px;
-}
-
-/* Botón de WhatsApp flotante */
-a[href*="wa.me"] {
-  font-family: 'Roboto', sans-serif;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .logo {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  nav a {
-    display: block;
-    margin-bottom: 10px;
-  }
-
-  .cards-container {
-    grid-template-columns: 1fr;
-  }
-}
-@media (max-width: 768px) {
-  .logo {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-}
-/* Contenedor interno del header */
-.contenedor-header {
-  max-width: 1100px;
-  margin: auto;
-  text-align: center;
-}
-
-/* Nav centrado */
-nav {
-  margin-top: 15px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-
-nav a {
-  color: #F4E9C6;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-#mision-vision-valores {
-  background-color: #ffffff;
-  padding: 40px 20px;
-}
-
-#mision-vision-valores h2 {
-  text-align: center;
-  margin-bottom: 30px;
-  color: #0F2630;
-}
-
-.bloques-mvv {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  max-width: 1000px;
-  margin: auto;
-}
-
-.bloque {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-left: 4px solid #0F2630;
-  border-radius: 8px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-}
-
-.bloque h3 {
-  color: #0F2630;
-}
-
-.bloque ul {
-  padding-left: 20px;
-  list-style: none;
-}
-
-.bloque ul li::before {
-  content: "• ";
-  color: #0F2630;
-  margin-right: 5px;
-}
-.hero-header {
+/* ===== HERO ===== */
+.hero-header{
   position: relative;
-  height: 100vh;
-  background: url('https://plus.unsplash.com/premium_photo-1661497281000-b5ecb39a2114?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center;
-  background-size: cover;
+  min-height: 100vh;
+  background: url('https://plus.unsplash.com/premium_photo-1661497281000-b5ecb39a2114?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.1.0') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #F4E9C6;
   text-align: center;
 }
-
-.hero-header .overlay {
-  background-color: rgba(15, 38, 48, 0.85);
+.hero-header .overlay{
   width: 100%;
   height: 100%;
-  padding: 40px 20px;
+  padding: 48px 20px 40px;
+  background: rgba(15, 38, 48, 0.86);
 }
-
-.hero-header .contenedor-header {
+.contenedor-header{
   max-width: 1000px;
-  margin: auto;
+  margin: 0 auto;
 }
 
-.hero-header .logo {
+/* Logo fijo (tamaño del antiguo SVG) */
+.logo-mini{
+  width: 72px;          /* ⇦ ajustá a 64/72/80 para igualar el tamaño exacto que querés */
+  height: 72px;
+  margin: 0 auto 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin-bottom: 20px;
+}
+.logo-mini img{
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  object-fit: contain;
+  display: block;
+  border-radius: 8px;              /* opcional */
+  box-shadow: 0 2px 8px rgba(0,0,0,.28); /* opcional */
 }
 
-.hero-header nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-  margin-bottom: 30px;
+/* Since 1999 pequeño */
+.since-mini{
+  margin: 0 auto 18px;
+  text-align: center;
+  font-size: .78rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: #E9EEF3;
+  opacity: .95;
 }
 
-.hero-header nav a {
+/* Títulos del hero */
+.hero-title{
+  font-size: clamp(1.8rem, 2.8vw + 1rem, 3rem);
+  margin: 0 0 6px;
+  letter-spacing: .02em;
+}
+.hero-subtitle{
+  margin: 0 0 16px;
+  opacity: .95;
+}
+
+/* Nav del hero */
+.hero-nav{
+  display: flex; flex-wrap: wrap; justify-content: center;
+  gap: 14px;
+  margin: 18px 0 26px;
+}
+.hero-nav a{
   color: #F4E9C6;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
   padding: 8px 12px;
-  border-radius: 5px;
+  border-radius: 6px;
+  transition: background-color .2s ease;
+}
+.hero-nav a:hover{
+  background: rgba(244,233,198,.1);
 }
 
-.hero-header nav a:hover {
-  background-color: rgba(244, 233, 198, 0.1);
+/* Eslogan y CTA */
+.eslogan h2{
+  margin: 0 0 14px;
+  font-size: clamp(1.4rem, 1.6vw + 1rem, 2rem);
 }
-
-.eslogan h2 {
-  font-size: 2em;
-  margin-bottom: 15px;
-}
-
-.btn-contactar {
-  background-color: #F4E9C6;
+.btn-contactar{
+  background: #F4E9C6;
   color: #0F2630;
   padding: 12px 24px;
-  font-weight: bold;
   border-radius: 30px;
+  font-weight: 700;
   text-decoration: none;
   display: inline-block;
-  transition: background-color 0.3s;
+  transition: background-color .25s ease, transform .1s ease;
+}
+.btn-contactar:hover{ background: #e2d6a9; }
+.btn-contactar:active{ transform: translateY(1px); }
+
+/* ===== Secciones generales ===== */
+.seccion {
+  padding: 48px 0;
+}
+.seccion h2{
+  color: #0F2630;
+  border-bottom: 2px solid #e8e8e8;
+  padding-bottom: 10px;
+  margin: 0 0 18px;
+}
+.seccion .intro{
+  color:#555; margin: 4px 0 24px;
+}
+.seccion-clara{
+  background: #ffffff;
 }
 
-.btn-contactar:hover {
-  background-color: #e2d6a9;
+/* ===== Misión/Visión/Valores ===== */
+.bloques-mvv{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 26px;
+}
+.bloque{
+  background: #f9f9f9;
+  padding: 20px;
+  border-left: 4px solid #0F2630;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+.bloque h3{ color: #0F2630; margin-top: 0; }
+.bloque ul{
+  list-style: none; padding-left: 0; margin: 10px 0 0;
+}
+.bloque ul li::before{
+  content: "• "; color: #0F2630; margin-right: 6px;
 }
 
-/* Ajustes responsive */
-@media (max-width: 768px) {
-  .hero-header {
-    height: auto;
-    padding: 60px 20px;
-  }
+/* ===== Cards de servicios ===== */
+.cards-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+.card{
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 1px 6px rgba(0,0,0,.06);
+  cursor: pointer;
+  transition: transform .18s ease, box-shadow .2s ease;
+  outline: none;
+}
+.card:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,.12);
+}
+.card:focus{
+  box-shadow: 0 0 0 3px rgba(15,38,48,.25);
+}
+.card h3{
+  margin: 0; color: #0F2630;
+}
+.detalle{ color:#555; margin-top: 10px; }
 
-  .hero-header .logo {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .eslogan h2 {
-    font-size: 1.5em;
-  }
+/* ===== FAQ ===== */
+details{
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 12px 16px;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+details summary{
+  cursor: pointer; font-weight: 600;
 }
 
-https://plus.unsplash.com/premium_photo-1661497281000-b5ecb39a2114?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-.logo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+/* ===== Contacto ===== */
+.contacto form{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
 }
-
-.logo img {
-  max-width: 200px; /* ajustá según lo grande que quieras el logo */
-  height: auto;
-  border-radius: 10px; /* suaviza esquinas */
-  box-shadow: 0 3px 12px rgba(0,0,0,.25); /* lo separa del fondo */
+.contacto label{ font-weight: 500; }
+.contacto input, .contacto textarea{
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
 }
-
-.logo .since {
-  margin-top: 8px;
-  font-size: 0.85rem;
-  color: #777; /* gris neutro */
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-.logo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;   /* centra horizontalmente */
-  justify-content: center;
-  text-align: center;
-  margin: 20px auto;     /* espacio arriba/abajo */
-}
-
-.logo img {
-  max-width: 180px;   /* ajustá el tamaño del logo */
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.logo .since {
-  margin-top: 8px;
-  font-size: 0.9rem;
-  color: #f5f5f5;     /* o #777 según fondo */
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-/* Caja del logo: ocupa SIEMPRE el mismo espacio */
-.logo{
-  width: 260px;          /* ajusta: 220–300 según te guste */
-  height: 120px;         /* ajusta: 90–140 según tu header */
-  margin: 0 auto 12px;   /* centrado + separación inferior */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-/* Evita que reglas globales de img la deformen */
-.logo img{
-  width: 100%;
-  height: 100%;
-  object-fit: contain;   /* encaja sin recortar ni deformar */
-  display: block;
-  border-radius: 10px;   /* opcional, quita si no quieres borde suave */
-  box-shadow: 0 3px 12px rgba(0,0,0,.25); /* opcional */
-}
-
-/* Texto debajo del logo */
-.logo .since{
+.contacto button{
   margin-top: 6px;
-  font-size: .82rem;
-  letter-spacing: .14em;
-  text-transform: uppercase;
-  color: #e9eef3;  /* cambia a #666 si el fondo es claro */
+  background: #0F2630;
+  color: #F4E9C6;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.contacto button:hover{ background: #1d3a45; }
+
+/* Mapa */
+.wrapper-mapa iframe{
+  border: none;
+  border-radius: 10px;
+  margin-top: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.08);
 }
 
-/* En móviles, reduce tamaño para que no rompa el layout */
-@media (max-width: 640px){
-  .logo{ width: 200px; height: 100px; margin-bottom: 10px; }
-  .logo .since{ font-size: .74rem; letter-spacing: .1em; }
+/* WhatsApp flotante */
+.btn-whatsapp{
+  position: fixed;
+  bottom: 20px; right: 20px;
+  background: #25D366;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 50px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,.28);
+  z-index: 999;
 }
-/* Caja del icono (mismo espacio que el SVG anterior) */
-.logo-mini{
-  width: 64px;      /* si tu SVG era más grande/pequeño, ajustá 56/72/80 */
-  height: 64px;
-  margin: 0 auto 12px;   /* centrado + espacio inferior como antes */
+
+/* ===== Footer ===== */
+.footer{
+  background: #0F2630;
+  color: #F4E9C6;
+  text-align: center;
+  padding: 32px 0;
+}
+.logo-container{
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+.logo-text h2{ margin: 0; font-size: 1.3rem; letter-spacing: .08em; }
+.logo-text p{ margin: 0; opacity: .9; }
+.footer .wrapper{ padding: 0 20px; }
+
+/* ===== Responsive ajustes ===== */
+@media (max-width: 720px){
+  .hero-title{ font-size: 2rem; }
+  .since-mini{ font-size: .72rem; }
+  .cards-container{ grid-template-columns: 1fr; }
 }
 
-/* Imagen: ocupa la caja sin deformarse */
-.logo-mini img{
-  width: 100%;
-  height: 100%;
-  object-fit: contain;          /* no recorta ni deforma */
-  display: block;
-  border-radius: 8px;           /* si tu icono anterior tenía puntas suaves */
-  box-shadow: 0 2px 8px rgba(0,0,0,.25); /* opcional, como el look anterior */
-}
-
-/* Texto pequeño debajo del icono (opcional) */
-.since-mini{
-  margin: 0 auto 18px;          /* separa el icono del título */
-  text-align: center;
-  font-size: .75rem;
-  letter-spacing: .14em;
-  text-transform: uppercase;
-  color: #e9eef3;               /* cambia a #666 si el fondo es claro */
-}
-
-/* Si tenés una regla global tipo img { max-width:100%; height:auto } (Bootstrap)
-   forzamos que aquí NO se aplique para que no se desborde ni cambie de tamaño */
-.logo-mini img{ max-width: none; }
 
 
 
