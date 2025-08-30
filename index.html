@@ -6,25 +6,31 @@
   <meta name="keywords" content="abogados, estudio jurídico, derecho civil, penal, laboral, Paraguay, Asunción">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cáceres Álvarez - Abogados</title>
+
+  <!-- Fuentes y estilos -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="estilos.css" />
+
+  <!-- Favicon -->
   <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
 </head>
 <body>
-<header class="hero-header">
+
+<!-- ===== HERO / ENCABEZADO ===== -->
+<header class="hero-header" role="banner">
   <div class="overlay">
     <div class="contenedor-header">
-      <div class="logo-mini">
-  <img src="logo.jpeg" alt="Cáceres Álvarez Abogados">
-  <p class="since">Since 1999</p>
-</div>
-
-          <h1>Cáceres Álvarez y Asociados</h1>
-          <p>Estudio Jurídico</p>
-        </div>
+      <!-- Logo fijo (reemplaza al SVG) -->
+      <div class="logo-mini" aria-label="Logo Cáceres Álvarez Abogados">
+        <!-- Usa el nombre exacto del archivo que subiste -->
+        <img src="logo.jpeg" alt="Cáceres Álvarez Abogados">
       </div>
+      <p class="since-mini">SINCE 1999</p>
 
-      <nav>
+      <h1 class="hero-title">Cáceres Álvarez y Asociados</h1>
+      <p class="hero-subtitle">Estudio Jurídico</p>
+
+      <nav class="hero-nav" aria-label="Navegación principal">
         <a href="#sobre">Sobre nosotros</a>
         <a href="#mision-vision-valores">Misión y visión</a>
         <a href="#servicios">Áreas de actuación</a>
@@ -40,169 +46,203 @@
   </div>
 </header>
 
-
-  <main>
-    <section id="sobre">
+<!-- ===== CONTENIDO ===== -->
+<main id="contenido" role="main">
+  <!-- Sobre nosotros -->
+  <section id="sobre" class="seccion">
+    <div class="wrapper">
       <h2>Sobre nosotros</h2>
-      <p>Somos un estudio jurídico comprometido con la excelencia y la ética profesional. Brindamos asesoría y representación legal adaptada a cada necesidad. Nuestro equipo está conformado por abogados con formación sólida y experiencia en distintas áreas del derecho. Nuestra misión es ofrecer soluciones jurídicas efectivas y personalizadas.</p>
-    </section>
-    <section id="mision-vision-valores">
-  <h2>Misión, Visión y Valores</h2>
-
-  <div class="bloques-mvv">
-    <div class="bloque">
-      <h3>Misión</h3>
-      <p>Brindar asesoramiento y representación legal con excelencia, compromiso ético y enfoque humano, buscando soluciones efectivas para cada cliente.</p>
+      <p>
+        En <strong>Cáceres Álvarez Abogados</strong> contamos con más de
+        <strong>25 años de experiencia</strong> brindando asesoría jurídica integral
+        a empresas, instituciones y personas. Nuestro compromiso se basa en la
+        transparencia, la ética profesional y la defensa de los intereses de
+        nuestros clientes. A lo largo de estas décadas, construimos una
+        trayectoria sólida que nos permite ofrecer soluciones legales eficaces,
+        confiables y adaptadas a cada necesidad.
+      </p>
     </div>
+  </section>
 
-    <div class="bloque">
-      <h3>Visión</h3>
-      <p>Ser un estudio jurídico de referencia en Paraguay, reconocido por la confianza, la calidad del servicio y el impacto positivo en la comunidad.</p>
+  <!-- Misión / Visión / Valores -->
+  <section id="mision-vision-valores" class="seccion seccion-clara">
+    <div class="wrapper">
+      <h2>Misión, Visión y Valores</h2>
+
+      <div class="bloques-mvv">
+        <div class="bloque">
+          <h3>Misión</h3>
+          <p>Brindar asesoramiento y representación legal con excelencia, compromiso ético y enfoque humano, buscando soluciones efectivas para cada cliente.</p>
+        </div>
+
+        <div class="bloque">
+          <h3>Visión</h3>
+          <p>Ser un estudio jurídico de referencia en Paraguay, reconocido por la confianza, la calidad del servicio y el impacto positivo en la comunidad.</p>
+        </div>
+
+        <div class="bloque">
+          <h3>Valores</h3>
+          <ul>
+            <li>Integridad</li>
+            <li>Responsabilidad</li>
+            <li>Empatía</li>
+            <li>Transparencia</li>
+            <li>Profesionalismo</li>
+          </ul>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="bloque">
-      <h3>Valores</h3>
-      <ul>
-        <li>Integridad</li>
-        <li>Responsabilidad</li>
-        <li>Empatía</li>
-        <li>Transparencia</li>
-        <li>Profesionalismo</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-
-    <section id="servicios">
+  <!-- Servicios -->
+  <section id="servicios" class="seccion">
+    <div class="wrapper">
       <h2>Áreas de práctica</h2>
       <p class="intro">Nos especializamos en diversas ramas del derecho. Brindamos asesoría estratégica y personalizada con enfoque profesional.</p>
 
-      <div class="cards-container">
-        <article class="card" tabindex="0">
+      <div class="cards-container" role="list">
+        <article class="card" role="listitem" tabindex="0" aria-expanded="false">
           <h3>Derecho Civil y de Familia</h3>
           <div class="detalle" hidden>
             <p>Divorcios, sucesiones, adopciones, tenencias y procesos patrimoniales. Casos exitosos en procesos familiares complejos.</p>
           </div>
         </article>
 
-        <article class="card" tabindex="0">
+        <article class="card" role="listitem" tabindex="0" aria-expanded="false">
           <h3>Derecho Penal</h3>
           <div class="detalle" hidden>
             <p>Defensa técnica en procesos penales, representación de víctimas y estrategias en delitos complejos.</p>
           </div>
         </article>
 
-        <article class="card" tabindex="0">
+        <article class="card" role="listitem" tabindex="0" aria-expanded="false">
           <h3>Derecho Laboral</h3>
           <div class="detalle" hidden>
             <p>Consultoría para empleadores y trabajadores. Contratos, reclamaciones, prevención y resolución de conflictos.</p>
           </div>
         </article>
 
-        <article class="card" tabindex="0">
+        <article class="card" role="listitem" tabindex="0" aria-expanded="false">
           <h3>Derecho Comercial</h3>
           <div class="detalle" hidden>
             <p>Asesoría en contratos comerciales, sociedades, fusiones y cuestiones empresariales.</p>
           </div>
         </article>
 
-        <article class="card" tabindex="0">
+        <article class="card" role="listitem" tabindex="0" aria-expanded="false">
           <h3>Propiedad Intelectual</h3>
           <div class="detalle" hidden>
             <p>Registro y protección de marcas, patentes, derechos de autor y defensa de activos intangibles.</p>
           </div>
         </article>
 
-        <article class="card" tabindex="0">
+        <article class="card" role="listitem" tabindex="0" aria-expanded="false">
           <h3>Contrataciones Públicas</h3>
           <div class="detalle" hidden>
             <p>Asistencia legal en procesos licitatorios, adjudicaciones, recursos administrativos y defensa.</p>
           </div>
         </article>
 
-        <article class="card" tabindex="0">
+        <article class="card" role="listitem" tabindex="0" aria-expanded="false">
           <h3>Mediación y Arbitraje</h3>
           <div class="detalle" hidden>
             <p>Resolución alternativa de conflictos mediante negociación, conciliación y arbitraje institucional.</p>
           </div>
         </article>
 
-        <article class="card" tabindex="0">
-          <h3>Y otras áreas del Derecho</h3>
+        <article class="card" role="listitem" tabindex="0" aria-expanded="false">
+          <h3>Otras áreas del Derecho</h3>
           <div class="detalle" hidden>
-            <p>Contamos con un equipo multidisciplinario capacitado para abordar distintas ramas del derecho según las necesidades del cliente.</p>
+            <p>Equipo multidisciplinario capacitado para abordar distintas ramas del derecho según las necesidades del cliente.</p>
           </div>
         </article>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="equipo">
+  <!-- Equipo -->
+  <section id="equipo" class="seccion seccion-clara">
+    <div class="wrapper">
       <h2>Nuestro equipo</h2>
-      <p>En <strong>Cáceres Álvarez Abogados</strong> contamos con más de 
-    <strong>25 años de experiencia</strong> brindando asesoría jurídica integral 
-    a empresas, instituciones y personas. Nuestro compromiso se basa en la 
-    transparencia, la ética profesional y la defensa de los intereses de 
-    nuestros clientes. A lo largo de estas décadas hemos construido una 
-    trayectoria sólida que nos permite ofrecer soluciones legales eficaces, 
-    confiables y adaptadas a cada necesidad.</p>
-    </section>
-    
-    <section id="faq">
+      <p>
+        En <strong>Cáceres Álvarez Abogados</strong> contamos con más de
+        <strong>25 años de experiencia</strong> brindando asesoría jurídica integral.
+        Combinamos rigurosidad técnica y criterio práctico para lograr resultados
+        concretos, defendiendo con compromiso los intereses de nuestros clientes.
+      </p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="seccion">
+    <div class="wrapper">
       <h2>Preguntas frecuentes</h2>
+
       <details>
-        <summary>¿Atienden consultas nacionales e internacionales via online?</summary>
+        <summary>¿Atienden consultas nacionales e internacionales vía online?</summary>
         <p>Sí, realizamos consultas virtuales a través de videollamada con cita previa.</p>
       </details>
+
       <details>
         <summary>¿Cuál es el costo de una primera consulta?</summary>
         <p>La primera consulta tiene un costo fijo que se descuenta si se contrata el servicio completo.</p>
       </details>
+
       <details>
         <summary>¿Qué documentos necesito para una consulta?</summary>
         <p>Depende del caso, pero recomendamos traer cédula, contratos o resoluciones relacionadas.</p>
       </details>
-    </section>
+    </div>
+  </section>
 
-    <section id="contacto" class="contacto">
+  <!-- Contacto -->
+  <section id="contacto" class="seccion contacto">
+    <div class="wrapper">
       <h2>Contacto</h2>
-      
       <p>Teléfono: +595 971 872841 - +595 872842</p>
       <p>Dirección: Hernandarias y Felix Perez Cardozo, Lambaré</p>
 
+      <!-- FormSubmit mantiene lo que ya funcionaba -->
       <form action="https://formsubmit.co/caceresalvarezabogados@gmail.com" method="POST" aria-label="Formulario de contacto">
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre" required />
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required />
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required />
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
 
-    <label for="mensaje">Mensaje:</label>
-    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
 
-    <!-- 🔹 Redirección a la página de gracias -->
-    <input type="hidden" name="_next" value="gracias.html">
+        <!-- Redirección a página de gracias -->
+        <input type="hidden" name="_next" value="gracias.html">
+        <!-- Opcional: desactivar captcha -->
+        <input type="hidden" name="_captcha" value="false">
 
-    <!-- 🔹 Opcional: desactivar captcha de Formsubmit -->
-    <input type="hidden" name="_captcha" value="false">
+        <button type="submit">Enviar consulta</button>
+      </form>
+    </div>
+  </section>
 
-    <button type="submit">Enviar consulta</button>
-  </form>
-</section>
+  <!-- Mapa (fuera de la sección para mantener margen limpio) -->
+  <div class="wrapper wrapper-mapa">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.440619855238!2d-57.609403099999994!3d-25.356545200000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945da99806834ccb%3A0x4b8cb839dfc711cd!2sFelix%20Perez%20Cardozo%20%26%20Hernandarias%2C%20110730%20Lambar%C3%A9!5e0!3m2!1ses-419!2spy!4v1756446610112!5m2!1ses-419!2spy"
+      width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      aria-label="Mapa de ubicación"></iframe>
+  </div>
 
-      <div style="margin-top: 20px;">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.440619855238!2d-57.609403099999994!3d-25.356545200000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945da99806834ccb%3A0x4b8cb839dfc711cd!2sFelix%20Perez%20Cardozo%20%26%20Hernandarias%2C%20110730%20Lambar%C3%A9!5e0!3m2!1ses-419!2spy!4v1756446610112!5m2!1ses-419!2spy" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      </div>
+  <!-- Botón WhatsApp flotante (se mantiene funcional) -->
+  <a href="https://wa.me/595971872841" target="_blank" class="btn-whatsapp" aria-label="Chatear por WhatsApp">
+    WhatsApp
+  </a>
+</main>
 
-      <a href="https://wa.me/595971872841" target="_blank" style="position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; padding: 10px 15px; border-radius: 50px; font-weight: bold; text-decoration: none; z-index: 999;">
-        WhatsApp
-      </a>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="logo-container">
-      <svg width="100" height="100" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logotipo Cáceres Álvarez Abogados">
+<!-- ===== FOOTER ===== -->
+<footer class="footer" role="contentinfo">
+  <div class="wrapper">
+    <div class="logo-container" aria-label="Logotipo y marca">
+      <!-- Conservamos tu SVG de marca en el footer -->
+      <svg width="80" height="80" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logotipo Cáceres Álvarez Abogados">
         <title>Cáceres Álvarez Abogados</title>
         <g fill="none" stroke="#F4E9C6" stroke-width="8">
           <path d="M50 30 L150 30 L150 130 L100 170 L50 130 Z"/>
@@ -214,6 +254,7 @@
           C
         </text>
       </svg>
+
       <div class="logo-text">
         <h2>CÁCERES ÁLVAREZ</h2>
         <p>ABOGADOS</p>
@@ -223,23 +264,32 @@
     <p class="copyright">
       © 2025 Cáceres Álvarez Abogados. Todos los derechos reservados.
     </p>
-  </footer>
+  </div>
+</footer>
 
-  <script>
-    document.querySelectorAll('.card').forEach(card => {
-      card.addEventListener('click', () => {
-        const detalle = card.querySelector('.detalle');
-        const visible = !detalle.hasAttribute('hidden');
-        document.querySelectorAll('.detalle').forEach(d => d.setAttribute('hidden', true));
-        if (!visible) detalle.removeAttribute('hidden');
-      });
+<!-- ===== JS (cards accesibles) ===== -->
+<script>
+  // Toggle accesible para abrir/cerrar detalle en cards con Enter/Espacio o click
+  document.querySelectorAll('.card').forEach(card => {
+    const toggle = () => {
+      const detalle = card.querySelector('.detalle');
+      const isOpen = !detalle.hasAttribute('hidden');
+      document.querySelectorAll('.detalle').forEach(d => d.setAttribute('hidden', true));
+      document.querySelectorAll('.card').forEach(c => c.setAttribute('aria-expanded', 'false'));
+      if (!isOpen) {
+        detalle.removeAttribute('hidden');
+        card.setAttribute('aria-expanded', 'true');
+      }
+    };
+    card.addEventListener('click', toggle);
+    card.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        toggle();
+      }
     });
-  </script>
-  <script src="script.js"></script>
+  });
+</script>
+
 </body>
-
 </html>
-
-
-
-
