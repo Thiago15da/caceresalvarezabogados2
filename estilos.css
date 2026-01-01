@@ -85,3 +85,45 @@ body {
     .hero h1 { font-size: 2.5rem; }
     .section { padding: 80px 5%; }
 }
+/* ... (Todo lo anterior se mantiene, pero asegúrate de que incluya esto para los iconos y el mapa) ... */
+
+.icon-card {
+    font-size: 2.5rem;
+    color: var(--gold);
+    margin-bottom: 20px;
+    display: block;
+}
+
+.map-container {
+    border: 1px solid var(--gold);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    line-height: 0; /* Quita espacio extra abajo */
+}
+
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25d366;
+    color: white;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    z-index: 9999;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.whatsapp-btn:hover { transform: scale(1.1); background-color: #128c7e; }
+
+/* Contacto mejorado */
+.info i { color: var(--gold); margin-right: 10px; width: 20px; }
+.social-links-footer { margin-top: 20px; }
+.social-links-footer a { color: var(--gold); font-size: 1.5rem; margin-right: 15px; text-decoration: none; }
+
+
