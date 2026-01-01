@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cáceres Álvarez Abogados | Excelencia y Ética</title>
+    <title>Cáceres Álvarez Abogados | Excelencia Jurídica</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+
+    <a href="https://wa.me/595981123456" class="whatsapp-btn" target="_blank" title="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
     <nav class="navbar">
         <div class="logo">
@@ -18,26 +23,27 @@
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#nosotros">La Firma</a></li>
             <li><a href="#servicios">Áreas</a></li>
+            <li><a href="#ubicacion">Ubicación</a></li>
             <li><a href="#contacto" class="btn-gold">Contacto</a></li>
         </ul>
-        <div class="menu-toggle" id="mobile-menu">
-            <span></span><span></span><span></span>
-        </div>
     </nav>
 
     <header id="inicio" class="hero">
         <div class="hero-content">
-            <h1 class="fade-in">Justicia con <br><span class="gold-text">Distinción</span></h1>
+            <h1>Justicia con <br><span class="gold-text">Distinción</span></h1>
             <div class="line-gold"></div>
-            <p>Representación legal de alto nivel con base en Asunción, Paraguay.</p>
-            <a href="#contacto" class="btn-outline">Agendar Consulta</a>
+            <p>Representación legal estratégica y ética en Paraguay.</p>
         </div>
     </header>
 
     <section id="nosotros" class="section">
         <div class="container">
             <h2 class="title-serif">Nuestra Firma</h2>
-            <p class="text-p">Combinamos la tradición jurídica con una visión moderna para resolver los desafíos legales más complejos de nuestros clientes.</p>
+            <p class="text-p">
+                En <strong>Cáceres Álvarez Abogados</strong>, nos distingue una trayectoria de integridad y resultados. 
+                Somos un equipo multidisciplinario dedicado a proteger los intereses de nuestros clientes con la 
+                rigurosidad técnica y la discreción que los asuntos de alta complejidad demandan.
+            </p>
         </div>
     </section>
 
@@ -46,35 +52,76 @@
             <h2 class="title-serif">Áreas de Especialidad</h2>
             <div class="grid-services">
                 <div class="card">
-                    <h3>Civil & Comercial</h3>
-                    <p>Contratos, sucesiones y litigios de alta complejidad.</p>
+                    <i class="fas fa-gavel icon-card"></i>
+                    <h3>Derecho Civil</h3>
+                    <p>Asesoría integral en contratos, responsabilidad civil y resolución de conflictos privados con enfoque preventivo.</p>
                 </div>
                 <div class="card">
-                    <h3>Laboral</h3>
-                    <p>Asesoría integral para empresas y defensa de derechos laborales.</p>
+                    <i class="fas fa-briefcase icon-card"></i>
+                    <h3>Derecho Comercial</h3>
+                    <p>Constitución de sociedades, gobierno corporativo y defensa de intereses empresariales en transacciones estratégicas.</p>
+                </div>
+                <i class="fas fa-users icon-card"></i>
+                <div class="card">
+                    <h3>Niñez y Adolescencia</h3>
+                    <p>Protección jurídica del interés superior del menor, regímenes de convivencia y procesos de asistencia alimentaria.</p>
                 </div>
                 <div class="card">
-                    <h3>Penal</h3>
-                    <p>Defensa especializada con absoluta confidencialidad y ética.</p>
+                    <i class="fas fa-user-shield icon-card"></i>
+                    <h3>Derecho Penal</h3>
+                    <p>Defensa técnica especializada y representación en procesos penales económicos y de alta sensibilidad.</p>
                 </div>
+                <div class="card">
+                    <i class="fas fa-file-invoice-dollar icon-card"></i>
+                    <h3>Sucesiones</h3>
+                    <p>Gestión de herencias, testamentos y procesos sucesorios, garantizando una transición patrimonial ordenada y justa.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-user-friends icon-card"></i>
+                    <h3>Derecho Laboral</h3>
+                    <p>Asistencia en relaciones de trabajo, negociaciones colectivas y defensa en litigios ante fueros laborales.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-landmark icon-card"></i>
+                    <h3>Derecho Administrativo</h3>
+                    <p>Representación ante entes públicos, licitaciones y procesos contencioso-administrativos de carácter estatal.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-handshake icon-card"></i>
+                    <h3>Mediación y Arbitraje</h3>
+                    <p>Solución alternativa de conflictos para alcanzar acuerdos beneficiosos sin necesidad de llegar a instancias judiciales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ubicacion" class="section">
+        <div class="container">
+            <h2 class="title-serif">Ubicación Estratégica</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57693.30397500589!2d-57.62534065!3d-25.282197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945da7a33bf63943%3A0xc6659f81237e583d!2sAsunci%C3%B3n!5e0!3m2!1ses!2spy!4v1700000000000!5m2!1ses!2spy" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </section>
 
     <section id="contacto" class="section">
         <div class="container">
-            <h2 class="title-serif">Contacto Directo</h2>
+            <h2 class="title-serif">Contacto</h2>
             <div class="contact-box">
                 <div class="info">
-                    <p><strong>Ubicación:</strong> Asunción, Paraguay</p>
-                    <p><strong>Teléfono:</strong> +595 XXX XXX XXX</p>
-                    <p><strong>Email:</strong> contacto@caceresalvarez.com.py</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Asunción, Paraguay</p>
+                    <p><i class="fas fa-phone"></i> +595 981 XXX XXX</p>
+                    <p><i class="fas fa-envelope"></i> info@caceresalvarez.com.py</p>
+                    <div class="social-links-footer">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
                 </div>
                 <form class="elegant-form">
-                    <input type="text" placeholder="Nombre y Apellido" required>
-                    <input type="email" placeholder="Email" required>
-                    <textarea placeholder="Breve descripción de su caso" rows="4"></textarea>
-                    <button type="submit" class="btn-gold-full">Enviar Mensaje</button>
+                    <input type="text" placeholder="Su Nombre" required>
+                    <input type="email" placeholder="Su Email" required>
+                    <textarea placeholder="¿Cómo podemos asistirle?" rows="4"></textarea>
+                    <button type="submit" class="btn-gold-full">Solicitar Entrevista</button>
                 </form>
             </div>
         </div>
@@ -87,4 +134,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
