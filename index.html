@@ -1,286 +1,89 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Cáceres Álvarez — Abogados</title>
-  <meta name="description" content="Estudio jurídico con más de 25 años de experiencia. Derecho civil, penal, laboral, comercial y más. Atención en Asunción y online." />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="estilos.css?v=1" />
-  <link rel="icon" href="favicon.ico" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cáceres Álvarez Abogados | Excelencia y Ética</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Topbar -->
-  <header class="topbar" id="topbar">
-    <div class="wrap">
-      <a href="#hero" class="brand" aria-label="Ir al inicio">CÁCERES ÁLVAREZ</a>
-
-      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-
-      <nav class="nav" aria-label="Navegación principal">
-        <a href="#sobre">Sobre</a>
-        <a href="#mvv">Misión y visión</a>
-        <a href="#servicios">Áreas</a>
-        <a href="#equipo">Equipo</a>
-        <a href="#contacto">Contacto</a>
-      </nav>
-    </div>
-  </header>
-
-  <!-- HERO -->
-  <section id="hero" class="hero" role="banner" aria-label="Portada del sitio">
-    <div class="hero-overlay">
-      <div class="hero-content">
-        <div class="logo-hero" aria-label="Logo Cáceres Álvarez Abogados">
-          <img src="logo1.jpg" alt="Cáceres Álvarez Abogados — Logo dorado">
+    <nav class="navbar">
+        <div class="logo">
+            <span class="gold-text">CÁCERES ÁLVAREZ</span>
+            <small>ABOGADOS</small>
         </div>
-
-        <p class="since">SINCE 1999</p>
-       <h1 class="tagline tagline--double" aria-label="Integridad y soluciones legales. Asesoría confiable">
-  <span>Integridad y soluciones legales</span>
-  <span class="accent">Asesoría confiable</span>
-</h1>
-
-        <div class="cta-row">
-          <a class="btn btn-primary" href="#contacto">Solicitá una consulta</a>
-          <a class="btn btn-ghost" href="#servicios">Conocé nuestras áreas</a>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">La Firma</a></li>
+            <li><a href="#servicios">Áreas</a></li>
+            <li><a href="#contacto" class="btn-gold">Contacto</a></li>
+        </ul>
+        <div class="menu-toggle" id="mobile-menu">
+            <span></span><span></span><span></span>
         </div>
-      </div>
-    </div>
-  </section>
+    </nav>
 
-  <main>
-
-    <!-- SOBRE -->
-    <section id="sobre" class="section">
-      <div class="wrap narrow">
-        <h2 class="h">Sobre nosotros</h2>
-        <p class="lead">
-          En <strong>Cáceres Álvarez Abogados</strong> contamos con más de
-          <strong>25 años de experiencia</strong> brindando asesoría jurídica integral
-          a empresas, instituciones y personas. Basamos nuestro trabajo en la
-          ética profesional, la transparencia y la búsqueda de resultados
-          concretos para cada cliente.
-        </p>
-      </div>
-    </section>
-
-    <!-- MISIÓN / VISIÓN / VALORES -->
-    <section id="mvv" class="section soft">
-      <div class="wrap">
-        <h2 class="h center">Misión, Visión y Valores</h2>
-
-        <div class="grid-3">
-          <article class="panel">
-            <h3 class="hp">Misión</h3>
-            <p>Asesorar y representar con excelencia, compromiso ético y enfoque humano, buscando soluciones efectivas y sostenibles.</p>
-          </article>
-
-          <article class="panel">
-            <h3 class="hp">Visión</h3>
-            <p>Ser estudio jurídico de referencia en Paraguay, reconocido por la calidad, la confianza y la innovación en el ejercicio profesional.</p>
-          </article>
-
-          <article class="panel">
-            <h3 class="hp">Valores</h3>
-            <ul class="ticks">
-              <li>Integridad</li>
-              <li>Responsabilidad</li>
-              <li>Empatía</li>
-              <li>Transparencia</li>
-              <li>Profesionalismo</li>
-            </ul>
-          </article>
+    <header id="inicio" class="hero">
+        <div class="hero-content">
+            <h1 class="fade-in">Justicia con <br><span class="gold-text">Distinción</span></h1>
+            <div class="line-gold"></div>
+            <p>Representación legal de alto nivel con base en Asunción, Paraguay.</p>
+            <a href="#contacto" class="btn-outline">Agendar Consulta</a>
         </div>
-      </div>
-    </section>
+    </header>
 
-    <!-- ÁREAS -->
-    <section id="servicios" class="section">
-      <div class="wrap">
-        <h2 class="h">Áreas de actuación de nuestros abogados</h2>
-        <p class="lead">Asesoría estratégica y representación en las principales ramas del derecho.</p>
-
-        <div class="cards">
-          <article class="card" tabindex="0" aria-expanded="false">
-            <h4>Derecho Civil y de Familia</h4>
-            <div class="detalle" hidden>
-              <p>Divorcios, sucesiones, adopciones, tenencias y procesos patrimoniales. Acompañamiento integral en casos complejos.</p>
-            </div>
-          </article>
-
-          <article class="card" tabindex="0" aria-expanded="false">
-            <h4>Derecho Penal</h4>
-            <div class="detalle" hidden>
-              <p>Defensa técnica, representación de víctimas y estrategias en delitos complejos con enfoque humano y técnico.</p>
-            </div>
-          </article>
-
-          <article class="card" tabindex="0" aria-expanded="false">
-            <h4>Derecho Laboral</h4>
-            <div class="detalle" hidden>
-              <p>Consultoría a empleadores y trabajadores. Contratos, reclamaciones, prevención y resolución de conflictos.</p>
-            </div>
-          </article>
-
-          <article class="card" tabindex="0" aria-expanded="false">
-            <h4>Derecho Comercial</h4>
-            <div class="detalle" hidden>
-              <p>Asesoría en contratos, sociedades, fusiones y gobierno corporativo para empresas y emprendedores.</p>
-            </div>
-          </article>
-
-          <article class="card" tabindex="0" aria-expanded="false">
-            <h4>Propiedad Intelectual</h4>
-            <div class="detalle" hidden>
-              <p>Registro y protección de marcas, patentes y derechos de autor. Defensa de activos intangibles.</p>
-            </div>
-          </article>
-
-          <article class="card" tabindex="0" aria-expanded="false">
-            <h4>Mediación y Arbitraje</h4>
-            <div class="detalle" hidden>
-              <p>Resolución alternativa de conflictos mediante negociación, conciliación y arbitraje institucional.</p>
-            </div>
-          </article>
-          <!-- Derecho Marítimo -->
-<article class="card" tabindex="0" aria-expanded="false">
-  <h4>Derecho Marítimo</h4>
-  <div class="detalle" hidden>
-    <p>Asesoría en contratos de fletamento, transporte y logística, seguros, embargo y limitación de responsabilidad, reclamaciones por avería y daños de carga.</p>
-  </div>
-</article>
-
-<!-- Derecho Ambiental -->
-<article class="card" tabindex="0" aria-expanded="false">
-  <h4>Derecho Ambiental</h4>
-  <div class="detalle" hidden>
-    <p>Cumplimiento normativo, evaluaciones de impacto, licencias y permisos, defensas administrativas y judiciales, y estrategias de sostenibilidad empresarial.</p>
-  </div>
-</article>
-
-<!-- Derecho Deportivo -->
-<article class="card" tabindex="0" aria-expanded="false">
-  <h4>Derecho Deportivo</h4>
-  <div class="detalle" hidden>
-    <p>Contratos de deportistas y cuerpos técnicos, transferencias, patrocinio, imagen, resolución de disputas ante federaciones y tribunales arbitrales.</p>
-  </div>
-</article>
-
+    <section id="nosotros" class="section">
+        <div class="container">
+            <h2 class="title-serif">Nuestra Firma</h2>
+            <p class="text-p">Combinamos la tradición jurídica con una visión moderna para resolver los desafíos legales más complejos de nuestros clientes.</p>
         </div>
-      </div>
     </section>
 
-    <!-- EQUIPO -->
-    <section id="equipo" class="section soft">
-      <div class="wrap narrow">
-        <h2 class="h center">Nuestro equipo</h2>
-        <p class="lead center">
-          Combinamos rigor técnico y criterio práctico. Nos enfocamos en comprender tu necesidad
-          y diseñar la estrategia legal que mejor te represente.
-        </p>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section id="faq" class="section">
-      <div class="wrap">
-        <h2 class="h">Preguntas frecuentes</h2>
-
-        <details>
-          <summary>¿Atienden consultas nacionales e internacionales vía online?</summary>
-          <p>Sí, realizamos consultas virtuales por videollamada con cita previa.</p>
-        </details>
-        <details>
-          <summary>¿Cuál es el costo de una primera consulta?</summary>
-          <p>La primera consulta tiene un costo fijo que se descuenta si se contrata el servicio completo.</p>
-        </details>
-        <details>
-          <summary>¿Qué documentos necesito para una consulta?</summary>
-          <p>Depende del caso; recomendamos traer cédula, contratos o resoluciones relacionadas.</p>
-        </details>
-      </div>
-    </section>
-
-    <!-- CONTACTO -->
-    <section id="contacto" class="section contact">
-      <div class="wrap">
-        <h2 class="h">Contacto</h2>
-
-        <div class="contact-grid">
-          <div>
-            <p><strong>Teléfono:</strong> +595 971 872841 — +595 872842</p>
-            <p><strong>Dirección:</strong> Hernandarias y Félix Pérez Cardozo, Lambaré</p>
-             <p><strong>Correo:</strong> info@caceresalvarezabogados.com.py</p>
-
-<form
-  action="https://formsubmit.co/info@caceresalvarezabogados.com.py"
-  method="POST"
-  accept-charset="UTF-8"
-  enctype="application/x-www-form-urlencoded"
-  target="_self"
-  aria-label="Formulario de contacto"
->
-  <label for="nombre">Nombre</label>
-  <input id="nombre" name="nombre" type="text" required>
-
-  <label for="email">Email</label>
-  <input id="email" name="email" type="email" required>
-
-  <label for="mensaje">Mensaje</label>
-  <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-
-  <!-- ✅ URL ABSOLUTA A TU SITIO -->
-  <input type="hidden" name="_next" value="https://caceresalvarezabogados.com.py/gracias.html">
-
-  <!-- Opcionales recomendados -->
-  <input type="hidden" name="_subject" value="Nueva consulta desde el sitio">
-  <input type="hidden" name="_template" value="table">
-  <input type="hidden" name="_captcha" value="false">
-  <input type="text" name="_honey" style="display:none">
-
-  <button type="submit" class="btn btn-primary">Enviar consulta</button>
-</form>
-
-          </div>
-
-          <div class="mapa">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.440619855238!2d-57.609403099999994!3d-25.356545200000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945da99806834ccb%3A0x4b8cb839dfc711cd!2sFelix%20Perez%20Cardozo%20%26%20Hernandarias%2C%20110730%20Lambar%C3%A9!5e0!3m2!1ses-419!2spy!4v1756446610112!5m2!1ses-419!2spy"
-              width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade" aria-label="Mapa de ubicación"></iframe>
-          </div>
+    <section id="servicios" class="section bg-alt">
+        <div class="container">
+            <h2 class="title-serif">Áreas de Especialidad</h2>
+            <div class="grid-services">
+                <div class="card">
+                    <h3>Civil & Comercial</h3>
+                    <p>Contratos, sucesiones y litigios de alta complejidad.</p>
+                </div>
+                <div class="card">
+                    <h3>Laboral</h3>
+                    <p>Asesoría integral para empresas y defensa de derechos laborales.</p>
+                </div>
+                <div class="card">
+                    <h3>Penal</h3>
+                    <p>Defensa especializada con absoluta confidencialidad y ética.</p>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-  </main>
+    <section id="contacto" class="section">
+        <div class="container">
+            <h2 class="title-serif">Contacto Directo</h2>
+            <div class="contact-box">
+                <div class="info">
+                    <p><strong>Ubicación:</strong> Asunción, Paraguay</p>
+                    <p><strong>Teléfono:</strong> +595 XXX XXX XXX</p>
+                    <p><strong>Email:</strong> contacto@caceresalvarez.com.py</p>
+                </div>
+                <form class="elegant-form">
+                    <input type="text" placeholder="Nombre y Apellido" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Breve descripción de su caso" rows="4"></textarea>
+                    <button type="submit" class="btn-gold-full">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
-  <!-- FOOTER (con el mismo logo dorado) -->
-  <footer class="footer">
-    <div class="wrap">
-      <div class="footer-brand">
-        <img src="logo1.jpg" alt="Cáceres Álvarez Abogados — Logo dorado">
-      </div>
-      <p class="copy">© 2025 Cáceres Álvarez Abogados. Todos los derechos reservados.</p>
-    </div>
-  </footer>
+    <footer class="footer">
+        <p>&copy; 2026 Cáceres Álvarez Abogados. Todos los derechos reservados.</p>
+    </footer>
 
-  <!-- WhatsApp flotante -->
-  <a class="btn-whatsapp" href="https://wa.me/595971872841" target="_blank" aria-label="Chatear por WhatsApp">WhatsApp</a>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
