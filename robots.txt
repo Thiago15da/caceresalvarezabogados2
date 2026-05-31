@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Disallow: /gracias.html
+
+Sitemap: https://caceresalvarezabogados.com.py/sitemap.xml

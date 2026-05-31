@@ -1,164 +1,406 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cáceres Álvarez Abogados | Excelencia Jurídica</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cáceres Álvarez Abogados | Estudio Jurídico en Lambaré, Paraguay</title>
+  <meta name="description" content="Cáceres Álvarez Abogados: representación legal estratégica y ética en Lambaré, Paraguay. Especializados en derecho civil, comercial, penal, laboral, sucesiones, niñez y adolescencia, derecho administrativo y mediación.">
+  <meta name="keywords" content="abogados Paraguay, estudio jurídico Lambaré, derecho civil Paraguay, abogado comercial Asunción, defensa penal Paraguay, sucesiones Paraguay, mediación arbitraje Paraguay, asesoría legal Paraguay">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Cáceres Álvarez Abogados">
+  <link rel="canonical" href="https://caceresalvarezabogados.com.py/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://caceresalvarezabogados.com.py/">
+  <meta property="og:title" content="Cáceres Álvarez Abogados | Estudio Jurídico en Lambaré, Paraguay">
+  <meta property="og:description" content="Representación legal estratégica y ética en Paraguay. Trayectoria de integridad y resultados en las áreas más complejas del derecho.">
+  <meta property="og:image" content="https://caceresalvarezabogados.com.py/logo1.jpg">
+  <meta property="og:locale" content="es_PY">
+  <meta property="og:site_name" content="Cáceres Álvarez Abogados">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cáceres Álvarez Abogados | Estudio Jurídico en Paraguay">
+  <meta name="twitter:description" content="Representación legal estratégica y ética en Paraguay. Especialistas en derecho civil, comercial, penal, laboral y más.">
+  <meta name="twitter:image" content="https://caceresalvarezabogados.com.py/logo1.jpg">
+
+  <link rel="icon" href="logo1.jpg" type="image/jpeg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: {
+              DEFAULT: '#B38E44',
+              light: '#D4AF37',
+              dark:  '#8B6914',
+              muted: '#C9A96E',
+            }
+          },
+          fontFamily: {
+            sans:  ['Inter', 'system-ui', 'sans-serif'],
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "Cáceres Álvarez Abogados",
+    "description": "Estudio jurídico en Lambaré, Paraguay especializado en derecho civil, comercial, penal, laboral, sucesiones, niñez y adolescencia, derecho administrativo y mediación y arbitraje.",
+    "url": "https://caceresalvarezabogados.com.py",
+    "logo": "https://caceresalvarezabogados.com.py/logo1.jpg",
+    "telephone": "+595971872841",
+    "email": "info@caceresalvarez.com.py",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Félix Pérez Cardozo",
+      "addressLocality": "Lambaré",
+      "addressRegion": "Central",
+      "addressCountry": "PY"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -25.356588,
+      "longitude": -57.609347
+    },
+    "areaServed": { "@type": "Country", "name": "Paraguay" },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Áreas de Práctica Legal",
+      "itemListElement": [
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Derecho Civil"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Derecho Comercial"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Niñez y Adolescencia"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Derecho Penal"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Sucesiones"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Derecho Laboral"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Derecho Administrativo"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Mediación y Arbitraje"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Servicios Integrales"}}
+      ]
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "08:00",
+      "closes": "18:00"
+    }]
+  }
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
 </head>
-<body>
+<body class="bg-white text-gray-900 font-sans antialiased">
 
-    <a href="https://wa.me/595971872841" class="whatsapp-btn" target="_blank" title="Contactar por WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+  <!-- ═══ NAVIGATION ═══ -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 transition-shadow duration-300">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="h-16 flex items-center justify-between">
 
-    <nav class="navbar">
-        <div class="logo">
-            <img src="logo1.jpg" alt="Logo Cáceres Álvarez" style="height: 50px; margin-right: 15px; vertical-align: middle;">
-            <div style="display: inline-block; vertical-align: middle;">
-                <span class="gold-text">CÁCERES ÁLVAREZ</span>
-                <small style="display: block; font-size: 10px; letter-spacing: 2px;">ABOGADOS</small>
-            </div>
+        <a href="index.html" class="flex flex-col leading-tight group">
+          <span class="font-serif text-sm font-semibold tracking-widest text-gray-900 group-hover:text-gold transition-colors duration-200">CÁCERES ÁLVAREZ</span>
+          <span class="text-xs text-gold font-sans" style="letter-spacing:0.28em;font-size:9px;">ABOGADOS</span>
+        </a>
+
+        <div class="hidden md:flex items-center gap-8">
+          <a href="index.html"      class="text-sm font-medium text-gray-900">Inicio</a>
+          <a href="nosotros.html"   class="text-sm text-gray-500 hover:text-gray-900 transition-colors duration-200">La Firma</a>
+          <a href="servicios.html"  class="text-sm text-gray-500 hover:text-gray-900 transition-colors duration-200">Áreas</a>
+          <a href="contacto.html"   class="text-sm text-gray-500 hover:text-gray-900 transition-colors duration-200">Contacto</a>
         </div>
-        <ul class="nav-links">
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#nosotros">La Firma</a></li>
-            <li><a href="#servicios">Áreas</a></li>
-            <li><a href="#ubicacion">Ubicación</a></li>
-            <li><a href="#contacto" class="btn-gold">Contacto</a></li>
-        </ul>
-    </nav>
 
-    <header id="inicio" class="hero">
-        <div class="hero-content">
-            <h1>Justicia con <br><span class="gold-text">Distinción</span></h1>
-            <div class="line-gold"></div>
-            <p>Representación legal estratégica y ética en Paraguay.</p>
+        <div class="flex items-center gap-3">
+          <a href="contacto.html" class="hidden md:inline-flex items-center px-5 py-2 text-sm font-medium bg-gray-900 text-white hover:bg-gray-700 transition-colors duration-200">
+            Consulta Gratuita
+          </a>
+          <button id="menu-btn" class="md:hidden p-2 text-gray-600" aria-label="Abrir menú">
+            <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
         </div>
-    </header>
-
-    <section id="nosotros" class="section">
-        <div class="container">
-            <h2 class="title-serif">Nuestra Firma</h2>
-            <p class="text-p">
-                En <strong>Cáceres Álvarez Abogados</strong>, nos distingue una trayectoria de integridad y resultados. 
-                Somos un equipo multidisciplinario dedicado a proteger los intereses de nuestros clientes con la 
-                rigurosidad técnica y la discreción que los asuntos de alta complejidad demandan.
-            </p>
-        </div>
-    </section>
-
-    <section id="servicios" class="section bg-alt">
-        <div class="container">
-            <h2 class="title-serif">Áreas de Especialidad</h2>
-            <div class="grid-services">
-                <div class="card">
-                    <i class="fas fa-gavel icon-card"></i>
-                    <h3>Derecho Civil</h3>
-                    <p>Asesoría integral en contratos, responsabilidad civil y resolución de conflictos privados con enfoque preventivo.</p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-briefcase icon-card"></i>
-                    <h3>Derecho Comercial</h3>
-                    <p>Constitución de sociedades, gobierno corporativo y defensa de intereses empresariales en transacciones estratégicas.</p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-users icon-card"></i>
-                    <h3>Niñez y Adolescencia</h3>
-                    <p>Protección jurídica del interés superior del menor, regímenes de convivencia y procesos de asistencia alimentaria.</p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-user-shield icon-card"></i>
-                    <h3>Derecho Penal</h3>
-                    <p>Defensa técnica especializada y representación en procesos penales económicos y de alta sensibilidad.</p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-file-invoice-dollar icon-card"></i>
-                    <h3>Sucesiones</h3>
-                    <p>Gestión de herencias, testamentos y procesos sucesorios, garantizando una transición patrimonial ordenada.</p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-user-friends icon-card"></i>
-                    <h3>Derecho Laboral</h3>
-                    <p>Asistencia en relaciones de trabajo, negociaciones colectivas y defensa en litigios ante fueros laborales.</p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-landmark icon-card"></i>
-                    <h3>Derecho Administrativo</h3>
-                    <p>Representación ante entes públicos, licitaciones y procesos contencioso-administrativos de carácter estatal.</p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-handshake icon-card"></i>
-                    <h3>Mediación y Arbitraje</h3>
-                    <p>Solución alternativa de conflictos para alcanzar acuerdos beneficiosos sin necesidad de instancias judiciales.</p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-balance-scale icon-card"></i>
-                    <h3>Servicios Integrales</h3>
-                    <p>Brindamos asesoramiento en diversas ramas del derecho, adaptándonos a las necesidades específicas de cada caso.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-  
-    <section id="ubicacion" class="section">
-    <div class="container">
-        <h2 class="title-serif">Nuestra Ubicación</h2>
-        <div class="map-container">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d267.9758819630071!2d-57.609346547080584!3d-25.356588242268685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spy!4v1767348031569!5m2!1ses-419!2spy" width="100%" 
-                height="450" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade"</iframe>
-        </div>
+      </div>
     </div>
-</section>
 
-
-
-  <section id="contacto" class="section">
-    <div class="container">
-        <h2 class="title-serif">Contacto</h2>
-        <div class="contact-box">
-            <div class="info">
-                <p><i class="fas fa-map-marker-alt"></i> Félix Pérez Cardozo, Lambaré, Paraguay</p>
-                <p><i class="fas fa-phone"></i> +595 971 872841</p>
-                <p><i class="fas fa-envelope"></i> info@caceresalvarez.com.py</p>
-                <div class="social-links-footer">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                </div>
-            </div>
-            <form class="elegant-form">
-                <input type="text" placeholder="Nombre y Apellido" required>
-                <input type="email" placeholder="Correo Electrónico" required>
-                <input type="tel" placeholder="Teléfono / WhatsApp" required>
-                <textarea placeholder="¿En qué área legal necesita asesoramiento?" rows="4"></textarea>
-                <button type="submit" class="btn-gold-full">Solicitar Entrevista</button>
-            </form>
-        </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+      <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col gap-1">
+        <a href="index.html"     class="text-sm font-medium text-gray-900 py-3 border-b border-gray-50">Inicio</a>
+        <a href="nosotros.html"  class="text-sm text-gray-600 py-3 border-b border-gray-50">La Firma</a>
+        <a href="servicios.html" class="text-sm text-gray-600 py-3 border-b border-gray-50">Áreas de Práctica</a>
+        <a href="contacto.html"  class="text-sm text-gray-600 py-3 border-b border-gray-50">Contacto</a>
+        <a href="contacto.html"  class="mt-3 text-center text-sm font-medium bg-gray-900 text-white py-3 px-6">Consulta Gratuita</a>
+      </div>
     </div>
-</section>
-    <footer class="footer">
-        <p>&copy; 2026 Cáceres Álvarez Abogados. Todos los derechos reservados.</p>
-    </footer>
+  </nav>
 
-    <script src="script.js"></script>
+  <!-- ═══ HERO ═══ -->
+  <section class="relative min-h-screen bg-gray-950 flex items-center pt-16">
+    <div class="absolute inset-0 bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950"></div>
+    <div class="absolute top-0 left-0 right-0 h-px" style="background:linear-gradient(to right,transparent,#B38E44,transparent)"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-6 py-32 lg:py-40">
+      <div class="max-w-4xl">
+        <p class="text-xs text-gold font-sans uppercase mb-8 tracking-widest" style="letter-spacing:0.3em;">Lambaré, Paraguay</p>
+
+        <h1 class="font-serif text-5xl md:text-7xl lg:text-[5.5rem] font-bold text-white leading-[1.05] mb-8">
+          Justicia con<br>
+          <em class="not-italic text-gold">Distinción</em>
+        </h1>
+
+        <p class="text-lg md:text-xl text-gray-400 font-light leading-relaxed mb-12 max-w-2xl">
+          Representación legal estratégica y ética en Paraguay. Un equipo multidisciplinario dedicado a proteger sus intereses con rigurosidad técnica y discreción absoluta.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="contacto.html" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gold text-white text-sm font-medium hover:bg-gold-dark transition-colors duration-200">
+            Solicitar Consulta
+            <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+            </svg>
+          </a>
+          <a href="servicios.html" class="inline-flex items-center justify-center px-8 py-4 border border-gray-600 text-gray-300 text-sm font-medium hover:border-gray-400 hover:text-white transition-colors duration-200">
+            Ver Áreas de Práctica
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-gray-600">
+      <span style="font-size:9px;letter-spacing:0.25em;" class="uppercase">Scroll</span>
+      <div class="h-8 w-px bg-gradient-to-b from-gray-600 to-transparent"></div>
+    </div>
+  </section>
+
+  <!-- ═══ ABOUT PREVIEW ═══ -->
+  <section class="py-32 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+
+        <div>
+          <p class="text-xs text-gold uppercase mb-6 tracking-widest" style="letter-spacing:0.25em;">La Firma</p>
+          <h2 class="font-serif text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-8">
+            Una trayectoria de integridad y resultados
+          </h2>
+          <p class="text-gray-500 leading-relaxed text-base mb-8">
+            En <strong class="text-gray-700 font-medium">Cáceres Álvarez Abogados</strong>, nos distingue una trayectoria de integridad y resultados. Somos un equipo multidisciplinario dedicado a proteger los intereses de nuestros clientes con la rigurosidad técnica y la discreción que los asuntos de alta complejidad demandan.
+          </p>
+          <a href="nosotros.html" class="inline-flex items-center gap-2 text-sm font-medium text-gray-900 hover:text-gold transition-colors duration-200 border-b border-gray-200 hover:border-gold pb-1">
+            Conocer la firma
+            <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-px bg-gray-100">
+          <div class="bg-white p-8 group hover:bg-gray-950 transition-all duration-300">
+            <div class="w-8 h-px bg-gold mb-6 group-hover:w-12 transition-all duration-300"></div>
+            <h3 class="font-serif text-lg font-semibold text-gray-900 group-hover:text-white mb-3 transition-colors duration-300">Rigurosidad Técnica</h3>
+            <p class="text-sm text-gray-500 group-hover:text-gray-400 leading-relaxed transition-colors duration-300">Análisis profundo de cada caso con el más alto nivel de excelencia jurídica.</p>
+          </div>
+          <div class="bg-white p-8 group hover:bg-gray-950 transition-all duration-300">
+            <div class="w-8 h-px bg-gold mb-6 group-hover:w-12 transition-all duration-300"></div>
+            <h3 class="font-serif text-lg font-semibold text-gray-900 group-hover:text-white mb-3 transition-colors duration-300">Discreción Absoluta</h3>
+            <p class="text-sm text-gray-500 group-hover:text-gray-400 leading-relaxed transition-colors duration-300">Manejo confidencial de todos los asuntos legales de nuestros clientes.</p>
+          </div>
+          <div class="bg-white p-8 group hover:bg-gray-950 transition-all duration-300">
+            <div class="w-8 h-px bg-gold mb-6 group-hover:w-12 transition-all duration-300"></div>
+            <h3 class="font-serif text-lg font-semibold text-gray-900 group-hover:text-white mb-3 transition-colors duration-300">Enfoque Estratégico</h3>
+            <p class="text-sm text-gray-500 group-hover:text-gray-400 leading-relaxed transition-colors duration-300">Soluciones pensadas para proteger sus intereses a corto y largo plazo.</p>
+          </div>
+          <div class="bg-white p-8 group hover:bg-gray-950 transition-all duration-300">
+            <div class="w-8 h-px bg-gold mb-6 group-hover:w-12 transition-all duration-300"></div>
+            <h3 class="font-serif text-lg font-semibold text-gray-900 group-hover:text-white mb-3 transition-colors duration-300">Compromiso Total</h3>
+            <p class="text-sm text-gray-500 group-hover:text-gray-400 leading-relaxed transition-colors duration-300">Dedicación plena a cada cliente con resultados medibles y transparentes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SERVICES PREVIEW ═══ -->
+  <section class="py-32 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between mb-16 gap-6">
+        <div>
+          <p class="text-xs text-gold uppercase mb-4 tracking-widest" style="letter-spacing:0.25em;">Especialidades</p>
+          <h2 class="font-serif text-4xl md:text-5xl font-bold text-gray-900 leading-tight">Áreas de Práctica</h2>
+        </div>
+        <a href="servicios.html" class="inline-flex items-center gap-2 text-sm font-medium text-gray-900 hover:text-gold transition-colors duration-200 shrink-0">
+          Ver las 9 especialidades
+          <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-gray-200">
+        <a href="servicios.html#civil" class="group bg-white p-8 hover:bg-gray-950 transition-all duration-300 block">
+          <div class="w-8 h-px bg-gold mb-6 group-hover:w-14 transition-all duration-300"></div>
+          <h3 class="font-serif text-xl font-semibold text-gray-900 group-hover:text-white mb-3 transition-colors duration-300">Derecho Civil</h3>
+          <p class="text-sm text-gray-500 group-hover:text-gray-400 leading-relaxed transition-colors duration-300">Asesoría integral en contratos, responsabilidad civil y resolución de conflictos privados con enfoque preventivo.</p>
+        </a>
+
+        <a href="servicios.html#comercial" class="group bg-white p-8 hover:bg-gray-950 transition-all duration-300 block">
+          <div class="w-8 h-px bg-gold mb-6 group-hover:w-14 transition-all duration-300"></div>
+          <h3 class="font-serif text-xl font-semibold text-gray-900 group-hover:text-white mb-3 transition-colors duration-300">Derecho Comercial</h3>
+          <p class="text-sm text-gray-500 group-hover:text-gray-400 leading-relaxed transition-colors duration-300">Constitución de sociedades, gobierno corporativo y defensa de intereses empresariales en transacciones estratégicas.</p>
+        </a>
+
+        <a href="servicios.html#penal" class="group bg-white p-8 hover:bg-gray-950 transition-all duration-300 block">
+          <div class="w-8 h-px bg-gold mb-6 group-hover:w-14 transition-all duration-300"></div>
+          <h3 class="font-serif text-xl font-semibold text-gray-900 group-hover:text-white mb-3 transition-colors duration-300">Derecho Penal</h3>
+          <p class="text-sm text-gray-500 group-hover:text-gray-400 leading-relaxed transition-colors duration-300">Defensa técnica especializada y representación en procesos penales económicos y de alta sensibilidad.</p>
+        </a>
+
+        <a href="servicios.html#laboral" class="group bg-white p-8 hover:bg-gray-950 transition-all duration-300 block">
+          <div class="w-8 h-px bg-gold mb-6 group-hover:w-14 transition-all duration-300"></div>
+          <h3 class="font-serif text-xl font-semibold text-gray-900 group-hover:text-white mb-3 transition-colors duration-300">Derecho Laboral</h3>
+          <p class="text-sm text-gray-500 group-hover:text-gray-400 leading-relaxed transition-colors duration-300">Asistencia en relaciones de trabajo, negociaciones colectivas y defensa en litigios ante fueros laborales.</p>
+        </a>
+
+        <a href="servicios.html#sucesiones" class="group bg-white p-8 hover:bg-gray-950 transition-all duration-300 block">
+          <div class="w-8 h-px bg-gold mb-6 group-hover:w-14 transition-all duration-300"></div>
+          <h3 class="font-serif text-xl font-semibold text-gray-900 group-hover:text-white mb-3 transition-colors duration-300">Sucesiones</h3>
+          <p class="text-sm text-gray-500 group-hover:text-gray-400 leading-relaxed transition-colors duration-300">Gestión de herencias, testamentos y procesos sucesorios, garantizando una transición patrimonial ordenada.</p>
+        </a>
+
+        <a href="servicios.html#mediacion" class="group bg-white p-8 hover:bg-gray-950 transition-all duration-300 block">
+          <div class="w-8 h-px bg-gold mb-6 group-hover:w-14 transition-all duration-300"></div>
+          <h3 class="font-serif text-xl font-semibold text-gray-900 group-hover:text-white mb-3 transition-colors duration-300">Mediación y Arbitraje</h3>
+          <p class="text-sm text-gray-500 group-hover:text-gray-400 leading-relaxed transition-colors duration-300">Solución alternativa de conflictos para alcanzar acuerdos beneficiosos sin necesidad de instancias judiciales.</p>
+        </a>
+      </div>
+
+      <div class="mt-10 text-center">
+        <a href="servicios.html" class="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-gray-900 transition-colors duration-200 border-b border-gray-200 hover:border-gray-400 pb-1">
+          Ver también: Niñez y Adolescencia · Derecho Administrativo · Servicios Integrales
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CTA BANNER ═══ -->
+  <section class="py-32 bg-gray-950 relative overflow-hidden">
+    <div class="absolute top-0 left-0 right-0 h-px" style="background:linear-gradient(to right,transparent,#B38E44 40%,transparent);opacity:0.5;"></div>
+    <div class="absolute bottom-0 left-0 right-0 h-px" style="background:linear-gradient(to right,transparent,#B38E44 40%,transparent);opacity:0.5;"></div>
+
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <p class="text-xs text-gold uppercase mb-6 tracking-widest" style="letter-spacing:0.3em;">Contáctenos</p>
+      <h2 class="font-serif text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+        ¿Necesita asesoramiento legal?
+      </h2>
+      <p class="text-gray-400 text-lg mb-12 max-w-2xl mx-auto leading-relaxed">
+        Nuestro equipo está preparado para analizar su caso con la rigurosidad y discreción que merece. Consulta inicial sin compromiso.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="contacto.html" class="inline-flex items-center justify-center px-8 py-4 bg-gold text-white text-sm font-medium hover:bg-gold-dark transition-colors duration-200">
+          Solicitar Entrevista
+        </a>
+        <a href="tel:+595971872841" class="inline-flex items-center justify-center gap-2 px-8 py-4 border border-gray-700 text-gray-300 text-sm font-medium hover:border-gray-500 hover:text-white transition-colors duration-200">
+          <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
+          </svg>
+          +595 971 872841
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="bg-gray-900 text-white">
+    <div class="max-w-7xl mx-auto px-6 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+        <div>
+          <div class="font-serif text-base font-semibold tracking-widest mb-1">CÁCERES ÁLVAREZ</div>
+          <div class="text-gold mb-6" style="font-size:9px;letter-spacing:0.3em;">ABOGADOS</div>
+          <p class="text-sm text-gray-400 leading-relaxed">Representación legal estratégica y ética en Paraguay.</p>
+        </div>
+
+        <div>
+          <h4 class="text-gray-500 mb-6 uppercase" style="font-size:9px;letter-spacing:0.25em;">Páginas</h4>
+          <ul class="space-y-3">
+            <li><a href="nosotros.html"  class="text-sm text-gray-400 hover:text-white transition-colors duration-200">La Firma</a></li>
+            <li><a href="servicios.html" class="text-sm text-gray-400 hover:text-white transition-colors duration-200">Áreas de Práctica</a></li>
+            <li><a href="contacto.html"  class="text-sm text-gray-400 hover:text-white transition-colors duration-200">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-gray-500 mb-6 uppercase" style="font-size:9px;letter-spacing:0.25em;">Contacto</h4>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-3 text-sm text-gray-400">
+              <svg class="h-4 w-4 mt-0.5 text-gold shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/>
+              </svg>
+              Félix Pérez Cardozo, Lambaré, Paraguay
+            </li>
+            <li>
+              <a href="tel:+595971872841" class="flex items-center gap-3 text-sm text-gray-400 hover:text-white transition-colors duration-200">
+                <svg class="h-4 w-4 text-gold shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
+                </svg>
+                +595 971 872841
+              </a>
+            </li>
+            <li>
+              <a href="mailto:info@caceresalvarez.com.py" class="flex items-center gap-3 text-sm text-gray-400 hover:text-white transition-colors duration-200">
+                <svg class="h-4 w-4 text-gold shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/>
+                </svg>
+                info@caceresalvarez.com.py
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-xs text-gray-600">© 2026 Cáceres Álvarez Abogados. Todos los derechos reservados.</p>
+        <p class="text-xs text-gray-700">Lambaré, Paraguay</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/595971872841" target="_blank" rel="noopener noreferrer"
+     class="fixed bottom-6 right-6 z-50 flex items-center gap-2 text-white px-4 py-3 shadow-xl transition-colors duration-200"
+     style="background:#25D366;" onmouseover="this.style.background='#1DAE57'" onmouseout="this.style.background='#25D366'"
+     aria-label="Contactar por WhatsApp">
+    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <span class="text-sm font-medium">WhatsApp</span>
+  </a>
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navbar = document.getElementById('navbar');
+
+    menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('shadow-sm', window.scrollY > 50);
+    });
+  </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
