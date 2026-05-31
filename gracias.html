@@ -1,172 +1,122 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Gracias — Cáceres Álvarez Abogados</title>
-  <meta name="robots" content="noindex" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta Recibida | Cáceres Álvarez Abogados</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Su consulta fue recibida correctamente. Un abogado de Cáceres Álvarez se pondrá en contacto a la brevedad.">
+
+  <link rel="icon" href="logo1.jpg" type="image/jpeg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: { DEFAULT: '#B38E44', light: '#D4AF37', dark: '#8B6914' }
+          },
+          fontFamily: {
+            sans:  ['Inter', 'system-ui', 'sans-serif'],
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
   <style>
-    :root{
-      --bg: #0a0b0d;
-      --panel: #121319;
-      --text: #E8EAF0;
-      --muted:#A4ADBA;
-      --gold:#D4AF37;
-      --gold-2:#F1D885;
-      --radius: 16px;
-      --shadow: 0 18px 50px rgba(0,0,0,.45);
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
     }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0}
-    body{
-      font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-      color:var(--text);
-      min-height:100vh;
-      display:grid;
-      place-items:center;
-      background:
-        radial-gradient(1100px 800px at 60% -10%, #141821 0%, #0c0e13 55%, #090b0e 100%),
-        linear-gradient(180deg,#0b0d12 0%, #0a0b0d 100%);
+    @keyframes scaleIn {
+      from { opacity: 0; transform: scale(0.92); }
+      to   { opacity: 1; transform: scale(1); }
     }
-    .card{
-      width:min(92vw,780px);
-      background:
-        radial-gradient(900px 600px at 100% 0%, rgba(212,175,55,.08) 0%, rgba(14,16,22,0) 65%),
-        linear-gradient(180deg,#151923 0%, #11151d 100%);
-      border:1px solid rgba(212,175,55,.16);
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-      padding:36px 28px;
-      text-align:center;
-      position:relative;
-      overflow:hidden;
+    @keyframes countDown {
+      from { width: 100%; }
+      to   { width: 0%; }
     }
-    .logo{
-      width:140px;height:140px;margin:0 auto 10px;
-      filter:drop-shadow(0 12px 26px rgba(212,175,55,.28));
-    }
-    .logo img{width:100%;height:100%;object-fit:contain;display:block}
-    h1{
-      font-family:'Playfair Display',serif;
-      margin:10px 0 8px;
-      font-size:clamp(1.6rem,1.2rem + 1.6vw,2.3rem);
-      color:#fff;
-      letter-spacing:.02em;
-      text-shadow:0 2px 16px rgba(0,0,0,.35);
-    }
-    p.lead{margin:0 0 14px;color:var(--muted);font-size:1.05rem}
-    .ref{
-      margin:10px auto 22px;
-      padding:10px 14px;
-      background:rgba(212,175,55,.10);
-      border:1px solid rgba(212,175,55,.22);
-      color:#e9e1c0;
-      width:max-content;
-      border-radius:999px;
-      font-weight:600;
-      letter-spacing:.06em;
-    }
-    .row{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
-    .btn{
-      display:inline-block;
-      padding:12px 22px;
-      border-radius:32px;
-      font-weight:700;
-      text-decoration:none;
-      transition:transform .06s ease, background .2s ease, color .2s ease, box-shadow .2s ease;
-    }
-    .btn-primary{
-      background:var(--gold);
-      color:#0b0c10;
-      box-shadow:0 12px 28px rgba(212,175,55,.25);
-    }
-    .btn-primary:hover{background:#e2c661;transform:translateY(-1px)}
-    .btn-ghost{
-      color:var(--gold-2);
-      border:2px solid rgba(212,175,55,.35);
-      background:transparent;
-    }
-    .btn-ghost:hover{background:rgba(212,175,55,.12)}
-    .foot{
-      margin-top:22px;
-      color:#96a1af;
-      font-size:.95rem;
-    }
-    /* mini confetti sutil */
-    .spark{
-      position:absolute; width:6px; height:6px; border-radius:50%;
-      background:var(--gold);
-      filter:blur(.2px);
-      opacity:.0;
-      animation: pop 1.8s ease-out forwards;
-    }
-    @keyframes pop{
-      0%{transform:translate(0,0) scale(.6); opacity:0}
-      15%{opacity:1}
-      100%{transform:translate(var(--tx), var(--ty)) scale(0.9); opacity:0}
-    }
-    @media (max-width:560px){
-      .card{padding:28px 20px}
-      .logo{width:120px;height:120px}
-    }
+    .anim-card    { animation: scaleIn 0.5s ease-out forwards; }
+    .anim-content { animation: fadeUp 0.6s 0.2s ease-out both; }
+    .progress-bar { animation: countDown 6s linear forwards; }
   </style>
 </head>
-<body>
+<body class="bg-gray-950 text-white font-sans antialiased min-h-screen flex items-center justify-center p-6">
 
-  <main class="card" role="status" aria-live="polite">
-    <div class="logo">
-      <!-- usa el mismo logo dorado -->
-      <img src="logo1.jpg" alt="Cáceres Álvarez Abogados">
+  <div class="anim-card w-full max-w-xl bg-gray-900 border border-gray-800 relative overflow-hidden">
+    <!-- Gold top accent -->
+    <div class="absolute top-0 left-0 right-0 h-px" style="background:linear-gradient(to right,transparent,#B38E44,transparent);"></div>
+    <!-- Progress bar (auto-redirect countdown) -->
+    <div id="progress" class="absolute top-0 left-0 h-px bg-gold progress-bar"></div>
+
+    <div class="anim-content p-10 md:p-14 text-center">
+      <!-- Check icon -->
+      <div class="w-16 h-16 mx-auto mb-8 flex items-center justify-center border border-gold">
+        <svg class="h-7 w-7 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+        </svg>
+      </div>
+
+      <!-- Logo text -->
+      <div class="mb-8">
+        <div class="font-serif text-xs font-semibold tracking-widest text-white mb-1">CÁCERES ÁLVAREZ</div>
+        <div class="text-gold" style="font-size:8px;letter-spacing:0.3em;">ABOGADOS</div>
+      </div>
+
+      <h1 class="font-serif text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
+        ¡Gracias por su consulta!
+      </h1>
+
+      <p class="text-gray-400 leading-relaxed mb-6 text-sm">
+        Recibimos su mensaje correctamente. Un abogado de nuestro estudio se pondrá en contacto con usted a la brevedad.
+      </p>
+
+      <!-- Reference number -->
+      <div class="inline-flex items-center gap-2 bg-gray-800 border border-gray-700 px-4 py-2 mb-10">
+        <span class="text-gray-500 text-xs uppercase tracking-widest" style="letter-spacing:0.15em;">N.º de referencia</span>
+        <span id="ref" class="text-gold text-sm font-medium font-mono"></span>
+      </div>
+
+      <!-- CTA Buttons -->
+      <div class="flex flex-col sm:flex-row gap-3 justify-center mb-8">
+        <a href="index.html" class="inline-flex items-center justify-center px-6 py-3 bg-white text-gray-900 text-sm font-medium hover:bg-gray-100 transition-colors duration-200">
+          Volver al inicio
+        </a>
+        <a href="https://wa.me/595971872841" target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-medium text-white transition-colors duration-200"
+           style="background:#25D366;" onmouseover="this.style.background='#1DAE57'" onmouseout="this.style.background='#25D366'">
+          <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          Escribir por WhatsApp
+        </a>
+      </div>
+
+      <!-- Auto-redirect notice -->
+      <p id="redir-notice" class="text-xs text-gray-600">Serás redirigido al inicio en unos segundos…</p>
     </div>
-
-    <h1>¡Gracias por tu consulta!</h1>
-    <p class="lead">
-      Recibimos tu mensaje correctamente. Un abogado de nuestro estudio se pondrá en
-      contacto contigo a la brevedad.
-    </p>
-
-    <div class="ref">N.º de referencia: <span id="ref"></span></div>
-
-    <div class="row" role="group" aria-label="Acciones">
-      <a href="/" class="btn btn-primary">Volver al inicio</a>
-      <a href="https://wa.me/595971872841" target="_blank" class="btn btn-ghost" rel="noopener">Escribir por WhatsApp</a>
-    </div>
-
-    <p class="foot" id="autoredir">Serás redirigido al inicio en unos segundos…</p>
-  </main>
+  </div>
 
   <script>
-    // Genera una referencia corta tipo ABC-1234
-    const ref = Math.random().toString(36).slice(2, 6).toUpperCase() + "-" +
-                Math.floor(1000 + Math.random()*9000);
-    document.getElementById('ref').textContent = ref;
+    // Generate short reference number
+    const code = Math.random().toString(36).slice(2,6).toUpperCase();
+    const num  = Math.floor(1000 + Math.random() * 9000);
+    document.getElementById('ref').textContent = code + '-' + num;
 
-    // Mini confetti dorado sutil
-    const card = document.querySelector('.card');
-    for (let i=0;i<18;i++){
-      const s = document.createElement('span');
-      s.className = 'spark';
-      const x = (Math.random()*2-1)*180; // -180..180
-      const y = (Math.random()*2-1)*120; // -120..120
-      s.style.left = (card.clientWidth/2) + 'px';
-      s.style.top  = (card.clientHeight/3) + 'px';
-      s.style.setProperty('--tx', x+'px');
-      s.style.setProperty('--ty', y+'px');
-      s.style.animationDelay = (Math.random()*0.35)+'s';
-      s.style.background = i%3 ? 'rgba(241,216,133,.95)' : 'rgba(212,175,55,.95)';
-      card.appendChild(s);
-    }
-
-    // Autoredirección a home después de 6 segundos
-    const targetURL = (location.origin || '') + '/';
-    setTimeout(()=>{ window.location.href = targetURL; }, 6000);
-
-    // Si no hay origin (ej. file://), quita el texto de autoredirección
-    if (!location.origin) {
-      document.getElementById('autoredir').textContent = '';
+    // Auto-redirect after 6 seconds
+    if (location.protocol !== 'file:') {
+      setTimeout(() => { window.location.href = '/'; }, 6000);
+    } else {
+      document.getElementById('redir-notice').textContent = '';
+      document.getElementById('progress').style.animation = 'none';
     }
   </script>
 </body>
 </html>
-
