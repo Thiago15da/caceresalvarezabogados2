@@ -139,7 +139,7 @@
         <div class="lg:col-span-3">
           <h2 class="font-serif text-2xl font-bold text-gray-900 mb-8">Solicitar Entrevista</h2>
 
-          <form id="contact-form" action="gracias.html" method="get" class="space-y-6">
+          <form id="contact-form" novalidate class="space-y-6">
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div>
                 <label for="nombre" class="block text-xs text-gray-500 uppercase mb-2 tracking-widest" style="letter-spacing:0.15em;">Nombre y Apellido</label>
@@ -359,11 +359,75 @@
   </a>
 
   <script>
+    // Nav
     const menuBtn = document.getElementById('menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
     const navbar = document.getElementById('navbar');
     menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
     window.addEventListener('scroll', () => navbar.classList.toggle('shadow-sm', window.scrollY > 50));
+
+    // Form → mailto con copia a NovaTec
+    const DEST_PRIMARY = 'info@caceresalvarezabogados.com.py';
+    const DEST_CC      = 'contacto@novatec.com.py';
+
+    const areaLabels = {
+      civil:          'Derecho Civil',
+      comercial:      'Derecho Comercial',
+      ninez:          'Niñez y Adolescencia',
+      penal:          'Derecho Penal',
+      sucesiones:     'Sucesiones',
+      laboral:        'Derecho Laboral',
+      administrativo: 'Derecho Administrativo',
+      mediacion:      'Mediación y Arbitraje',
+      integrales:     'Servicios Integrales',
+      otro:           'Otro / No especificado',
+    };
+
+    document.getElementById('contact-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const nombre   = document.getElementById('nombre').value.trim();
+      const email    = document.getElementById('email').value.trim();
+      const telefono = document.getElementById('telefono').value.trim();
+      const areaVal  = document.getElementById('area').value;
+      const area     = areaLabels[areaVal] || areaVal || 'No especificada';
+      const mensaje  = document.getElementById('mensaje').value.trim();
+
+      // Validate required fields
+      if (!nombre || !email || !telefono) {
+        alert('Por favor complete los campos obligatorios: Nombre, Correo y Teléfono.');
+        return;
+      }
+
+      const subject = 'Consulta web — ' + nombre;
+
+      const body =
+        'Estimado equipo de Cáceres Álvarez Abogados,\n\n' +
+        'Han recibido una nueva consulta desde el sitio web:\n\n' +
+        '━━━━━━━━━━━━━━━━━━━━━━━━\n' +
+        'Nombre:    ' + nombre   + '\n' +
+        'Email:     ' + email    + '\n' +
+        'Teléfono:  ' + telefono + '\n' +
+        'Área:      ' + area     + '\n' +
+        '━━━━━━━━━━━━━━━━━━━━━━━━\n\n' +
+        'Mensaje:\n' + (mensaje || '(Sin mensaje adicional)') + '\n\n' +
+        '─────────────────────────\n' +
+        'Enviado desde caceresalvarezabogados.com.py\n' +
+        'Copia enviada a: ' + DEST_CC;
+
+      const mailtoURL =
+        'mailto:' + DEST_PRIMARY +
+        '?cc='      + encodeURIComponent(DEST_CC) +
+        '&subject=' + encodeURIComponent(subject) +
+        '&body='    + encodeURIComponent(body);
+
+      // Open client email; redirect to thank-you page after brief delay
+      const link = document.createElement('a');
+      link.href = mailtoURL;
+      link.click();
+
+      setTimeout(() => { window.location.href = 'gracias.html'; }, 400);
+    });
   </script>
 </body>
 </html>
